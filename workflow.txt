@@ -1,0 +1,32 @@
+# Areas still needed to be modeled for chatbot:
+
+## Medical question database redirecting 
+### Basic Areas that bot should be able to talk about:
+#### Autism
+#### Asthma
+#### Diabetes
+#### CVS
+#### Stress
+#### Exersize
+#### Covid
+#### Flu
+#### Cold
+##### symptoms of all above mentioned items
+
+## Generic APP questions
+### Basic Areas that the bot should be able to talk about:
+#### Interphase locations
+#### What data that is shown is
+#### What x is
+#### Where x is
+#### Basic questions about the wearable
+#### Some trouble shooting questions
+
+## Expand the workflow in which the bot can communicate
+### Bot should be able to answer questions about itself
+#### privacy
+#### how it works
+#### how the bot learns
+#### 
+
+## expand bot responces to questions to make bot not seem super repatative (consider 10 responces for each subject.)
