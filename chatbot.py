@@ -7,8 +7,9 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
+from autocorrect import Speller
 
-## loading in data from model
+## loading in data from model and intializing models and libs
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
@@ -16,6 +17,7 @@ intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbot_model.h5')
+spell = Speller(lang='en')
 
 ## cleaning up sentences
 
@@ -60,6 +62,7 @@ def get_response(intents_list, intents_json):
 			break
 	return result
 
+
 ##functions to sort through responses, and refrence if response is in list
 
 def var_finder(lst, var_searching, return_var, fail_var):
@@ -86,7 +89,7 @@ res = 'temp'
 
 while True:
 	add_to_database = get_all_responses('add to databse now')
-	message = input('').lower()
+	message = spell(input('').lower())
 
 	## test variable, remove after training is done
 	if message == 'break':
@@ -105,7 +108,7 @@ while True:
 	else:
 		ints = predict_class(message)
         ## bot is certain enough its the correct response 
-		if float(ints[0]['probability']) > .995:
+		if float(ints[0]['probability']) > .99:
 			res = get_response(ints, intents)
         ## bot is uncertain answer is correct result
 		else:
