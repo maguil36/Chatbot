@@ -2,16 +2,9 @@
 
 ## Medical question database redirecting 
 ### Basic Areas that bot should be able to talk about:
-#### Autism
-#### Asthma
-#### Diabetes
+
 #### CVS
-#### Stress
-#### Exersize
-#### Covid
-#### Flu
-#### Cold
-##### symptoms of all above mentioned items
+##### 
 
 ## Generic APP questions
 ### Basic Areas that the bot should be able to talk about:
@@ -30,3 +23,10 @@
 #### 
 
 ## expand bot responces to questions to make bot not seem super repatative (consider 10 responces for each subject.)
+
+# empty tag
+	{"tag": "",
+	"patterns": [""],
+	"responses": [""]
+	},
+	
