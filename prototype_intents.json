@@ -1,0 +1,893 @@
+{"intents": [
+
+	{"tag": "bot uncertain",
+	"patterns": ["lol"],
+	"responses0": ["I'm sorry I don't understand you. ", "Sorry but I don't recognize that. ", "I don't know how to answer that. ", "I'm sorry but I don't know how to answer. ", "I'm uncertain how to respond. "],
+	"responses1": ["Would you like to help train me to answer that? ", "Would you consider helping training me to recognize that? ", "Could you help train me to answer that? ", "Would you like to help train me? "], 
+	"responses2": ["If so type (Y) and if not (N)."],
+	"followups": ["Y", "N", "I need help with something else."]
+	},
+
+	{"tag": "training",
+	"patterns": ["train", "training"],
+	"responses0": ["First tell me the issue of where I could improve. ", "Start by writing out what area I could improve in. ", "Begin with telling me what you'd like to be improved. "],
+	"responses1": ["Then in the next line tell me what you'd have liked to see.", "In the next line tell me what you were hoping to see.", "After that in the next line type what you hoped to see."], 
+	"responses2": [""],
+	"followups": [""]
+	},
+
+
+
+	{"tag": "greeting",
+	"patterns": ["hi", "hello rob the bot", "sup rob", "whats up", "good day", "is anyone there", "good morning", "good afternoon", "good evening", "what's new", "hey there", "yo", "hi rob the bot", "sup rob the bot", "hey rob"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need help with a question.", "I want to give feedback.", "I'm new!", "I need help with something else."]
+	},
+
+	{"tag": "greeting_1",
+	"patterns": ["how's it going?", "whats happening", "how do you do", "hi how are you", "good day, how are you", "morning, how are you"],
+	"responses0": ["I'm well", "I'm good", "It's going great"],
+	"responses1": ["! ", ". ", " {}! "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need help with a question.", "Can you show me the most common questions?", "I want to give feedback.", "I'm new!", "I need help with something else."]
+	},
+
+	{"tag": "help",
+	"patterns": ["help", "i need help", "can i have help", "i need assistance", "can i have assistance", "could you lend a hand"],
+	"responses0": ["How may I help", "What do you need help with", "In what way may I be of assistance", "What do you need"],
+	"responses1": [" {}", ""], 
+	"responses2": ["?"],
+	"followups": ["I'm having issues navigating the chatbot.", "I need help with a question.", "I want to give feedback.", "I need help with something else."]
+	},
+
+	{"tag": "goodbye",
+	"patterns": ["goodbye", "bye", "bye bye", "see you later", "so long", "talk to you later", "see you soon", "I've got to get going", "I must be going", "take it easy", "I'm off", "have a nice day", "have a good evening", "have a good night", "have a good morning", "have a good one", "I look forward to our next meeting", "until next time", "take care", "it was nice to see you again", "it was nice seeing you", "goodnight", "later", "catch you later", "peace", "peace out", "I'm out", "I'm out of here", "I gotta hit the road", "I've got to head out", "I need to go", "I need to leave", "thanks, goodbye", "Excellent, goodbye", "thanks for your help, goodbye", "that helped a lot, goodbye", "thanks I've got to go."],
+	"responses0": ["Goodbye", "Have a good day", "Nice talking", "Later", "Talk to you later", "Have a great day", "Bye"],
+	"responses1": ["", " {}"], 
+	"responses2": ["! Message me if you need anything else!", "! If you need any help message me!", "! Hope we can chat again soon!"],
+	"followups": [""]
+	},
+
+	{"tag": "thanking",
+	"patterns": ["Thanks a bunch", "Thanks", "Thank you", "Thanks a bunch", "Thanks a ton", "I really appreciate it", "That's very kind", "I owe you one", "you rock", "I can't thank you enough", "I can't thank you enough", "I'm so grateful for", "I'm so thankful for", "Many thanks for", "I truly appreciate", "Thank you ever so much for", "It's so kind of you to", "I'm grateful for", "I cannot thank you enough for", "I want you to know how much I value", "cannot describe how grateful I am for", "Please accept my deepest thanks for", "Your support is greatly appreciated", "I'd like to express my appreciation for", "thanks rob", "thank you rob"],
+	"responses0": ["Glad it helped", "Happy it helped", "Great to hear that it helped", "Perfect", "Good to hear", "I'm glad that helped", "Nice to hear that helped"],
+	"responses1": ["! ", " {}! ", ". "],  
+	"responses2": [" Anything else?", " How else can I help?", " Do you need anything else?", " Is there something else I can do for you?", " Need anything else?"],
+	"followups": [""]
+	},
+
+
+
+	{"tag": "user uncertain",
+	"patterns": ["I'd like to make a complaint", "I'd like to add feedback", "can I give you some feedback", "is there a way for me to complain about something", "I don't understand", "that is the wrong response", "incorrect response", "I don't think that is the right way of saying that", "can you rephrase that", "can you say that in a different way", "please say that again", "can you word that differently", "that is not what I'm looking for", "that is not what I need", "wrong answer", "nope not what I was hoping for", "I don't think I needed to hear that", "that is not the help I needed", "that is not the help I was looking for", "I didn't want you to help me in that way", "nope, not what I wanted", "wrong, that isn't what I was hoping for"],
+	"responses0": ["Would you like to help train me to answer that? ", "Would you consider helping training me to recognize that? ", "Could you help train me to answer that? ", "Would you like to help train me? "], 
+	"responses1": ["If so type (Y) and if not (N)."],
+	"responses2": [""],
+	"followups": [""]
+	},
+
+	{"tag": "add to database later",
+	"patterns": ["N", "n", "(n)", "(N)", "No I don't want to train you", "no I do not want to help train the bot", "I have no interest in training you", "no interest, n", "n, not interested", "no", "not now"],
+	"responses0": ["Okay, ", "Alright, ", "Understood, ", "Got it, "],
+	"responses1": ["maybe later. ", "let me know if you want to at some other point. ", "just let me know if you are intrested later. "], 
+	"responses2": ["Anything else I can help you with?", "Do you need something else?", "What else can I do for you?"],
+	"followups": [""]
+	},
+
+	{"tag": "add to database now",
+	"patterns": ["Y", "y", "(y)", "(Y)"],
+	"responses0": ["First tell me the issue of where I could improve. ", "Start by writing out what area I could improve in. ", "Begin with telling me what you'd like to be improved. "],
+	"responses1": ["Then in the next line tell me what you'd have liked to see.", "In the next line tell me what you were hoping to see.", "After that in the next line type what you hoped to see."], 
+	"responses2": [""],
+	"followups": [""]
+	},
+
+	{"tag": "training done",
+	"patterns": ["Done training you"],
+	"responses0": ["Thanks for helping train me! ", "Thanks for training me! ", "Thanks for the help! ", "Thank you for helping! "],
+	"responses1": ["I'll be sending your feedback in soon. ", "Your feedback will soon be processed. ", "Your feedback will be looked over soon {}. "], 
+	"responses2": ["Is there another way I can help?", "Any other way I can help?", "How else can I help?", "Anything else you need?"],
+	"followups": [""]
+	},
+
+	{"tag": "something else",
+	"patterns": ["I need help something else", "none of these are what I'm looking for", "I wanted something else", "i wanted something different"],
+	"responses0": ["Okay here are some other options ", "Alright, here are some other questions ", "Here are some other questions "],
+	"responses1": ["that might help. ", "which may help. ", "which hopefully will give you what you need. "], 
+	"responses2": ["If you need something else feel free to type it bellow.", "If none of these help you can always type your question bellow.", "You can also type your question bellow and that might help."],
+	"followups": ["I need help with a question.", "I need help.", "I want to give feedback."]
+	},
+
+
+
+	{"tag": "I'm new",
+	"patterns": ["Hi I'm new", "I'm new", "I'm a new user", "I haven't used this before", "this is my first time using the chatbot", "I've never used the chatbot before", "I need to review the chatbot's interphase", "I need a review on what the chatbot does", "I need a review on how to use the chatbot"],
+	"responses0": ["Great", "Good to hear", "Happy to hear", "Nice to hear", "Good to hear", "Welcome"],
+	"responses1": [" {} ! ", "! ", ". "], 
+	"responses2": ["Would you like me to tell you more?", "Would you like me to walk you through more?", "Do you want me to tell you more?"],
+	"followups": ["Can you tell me what you do?", "Never mind I need help with a question.", "Can you tell me how you work?", "What is feedback?", "How do you learn with my feedback?", "How do you hadle privacy?", "What are these up and down arrows?", "Why does the bot message me?", "How do I navigate the bot?", "I need help with something else."]
+	},
+
+	{"tag": "fuctions and purpose",
+	"patterns": ["can you tell me what you do?", "What is the purpose of the bot", "What functions are you able to preform?", "What does the bot do?"],
+	"responses0": ["I have three main purposes: first is helping troubleshoot issues you may be having be it with the hardware or app, ", "I am here mainly do to three things: first is I'm here to help is with any issues you may be having with the app or hardware, ", "My goal is to help in three ways: first is I answer questions about the app and hardware, ", "I'm here to help in three different ways: first is by answering your questions about the app or hardware, "],
+	"responses1": ["second is helping with give you information about health and medical questions, ", "the second way I help is by helping answer your question related to health and medine, ", "second I answer common medical questions, "], 
+	"responses2": ["and thrid is helping by giving you an avinue for feedback.", "and the third way is by giving you a way to express feedback", "and third I help you record feedback either about the app or keep data about your child.", "and the third is to give you a way to give feedback about the app or hardware."],
+	"followups": ["Can you tell me how you work?", "What is feedback?", "How do you learn with my feedback?", "How do you hadle privacy?", "What are these up and down arrows?", "Why does the bot message me?", "How do I navigate the bot?", "I need a review on how to use the chatbot", "I need help with something else."]
+	},
+
+	{"tag": "How it works",
+	"patterns": ["Can you tell me how you work?", "What were you programmed to do?", "How do you work?"],
+	"responses0": ["I'm a chatbot that uses machine learning to answer your questions! ", "I use machine learning to answer your questions! ", "I'm a chatbot and I use what is called machine learning to answer your questions!"],
+	"responses1": ["The questions bellow give you a formal and structured method to narrow down and find your questions; however you may also type them out and I may be able to give you an answer. ", "You can either select a question in the bubbles bellow or type one out. ", "The questions bellow will help guide you to what I can help you with but you can also just ask them by typing them out."], 
+	"responses2": ["If you want to see an old questions options click on the view old questions option and don't forget you can scroll to see even more question options!", "If you missed a question from before that you'd like to have answered select the view old questions option to select the question and don't forget you can scroll to see even more questions!", "You can also click the view old questions option to see older options and don't forget that you can scroll to see more questions!"],
+	"followups": ["What is feedback?", "How do you learn with my feedback?", "How do you hadle privacy?", "What are these up and down arrows?", "Why does the bot message me?", "How do I navigate the bot?", "I need a review on how to use the chatbot", "Can you tell me what you do?", "I need help with something else."]
+	},
+
+	{"tag": "How to work feedback",
+	"patterns": ["What is feedback", "what happens to feedback", "how does feedback help", "how do I give feedback", "where do I give feedback"],
+	"responses0": ["There are two types of responses that will I will record your feedback in. ", "I will record your feedback in two seperate responses. ", "Of the responses possible there are two which will lead to me recording your feedback. "],
+	"responses1": ["The first type is on feedback regarding the user of the band, these are questions I will ask you or you can record yourself. ", "First of these two is on the user of the band, which you can add feedback on either after I message you or you can seek out yourself by telling me you want to give feedback. ", "The first type of feedback you can give is on the band's user which you can give either after a message appears and asks if you want to give feedback or by seeking it out. "], 
+	"responses2": ["The second of which you can give any time through talking to me and it can be about any issue you are having, be it talking to me, a hardware issue, or wanting a feature!", "Second you can give feedback at any point while talking to me about any subject, be it something you'd like to see or an issue you'd like to have fixed!"],
+	"followups": ["How do you learn with my feedback?", "How do you hadle privacy?", "What are these up and down arrows?", "Why does the bot message me?", "How do I navigate the bot?", "I need a review on how to use the chatbot", "Can you tell me what you do?", "Can you tell me how you work?", "I need help with something else."]
+	},
+
+	{"tag": "training questions",
+	"patterns": ["how do you learn with my feedback?", "when will my feedback go into you?", "How do you integrate feedback?", "How will my training work with you?", "in what way does training you make you learn?"],
+	"responses0": ["I start by recording your feedback. ", "First your feedback is record. ", "When you give me feedback I record it. "],
+	"responses1": ["Afterwords your feedback along with everyone else's is reviewed. ", "Once that is done everyone's feedback is looked through. ", "Next everyone's feedback is looked over. "], 
+	"responses2": ["This then becomes new answers or better answers to your questions.", "This feedback is then turned into new questions or improves old questions.", "With this new answers to your questions or better answers to old questions are made."],
+	"followups": ["How do you hadle privacy?", "What are these up and down arrows?", "Why does the bot message me?", "How do I navigate the bot?", "I need a review on how to use the chatbot", "I need help with something else.", "Can you tell me what you do?", "Can you tell me how you work?", "What is feedback?", "I need help with something else."]
+	},
+
+	{"tag": "privacy questions bot",
+	"patterns": ["what is the privacy policy of this bot", "what messages are recorded on this bot", "how do you handle privacy", "is privacy on this bot any good?", "what information do you record", "how much of what I'm saying do you record", "can you tell me about the chatbot's privacy", "can you tell me how much of what I say is private or public"],
+	"responses0": ["The only periminate information I keep that you type or ask is the feedback which you choose to give me. ", "The only information I keep is on the feedback you give me. ", "I do not keep any information you type or ask besides what feedback you choose to give. "],
+	"responses1": ["All the questions that you can revist are not stored anywhere long term so do not feel shy about asking anything you need to!", "I do not store anything else online so feel free to ask any question and don't feel shy!", "Nothing you ask or type will be stored online so ask whatever you want!"], 
+	"responses2": [""],
+	"followups": ["What are these up and down arrows?", "Why does the bot message me?", "How do I navigate the bot?", "I need a review on how to use the chatbot", "I need help with something else.", "Can you tell me what you do?", "Can you tell me how you work?", "What is feedback?", "How do you learn with my feedback?", "I need help with something else."]
+	},
+
+	{"tag": "How to work up down",
+	"patterns": ["where is the liking button", "where is the disliking button", "What are these up and down arrows", "what is this like and dislike", "how do I like and dislike something", "what does liking or disliking do", "what is liking", "what is disliking", "what does disliking do", "does liking or disliking something do anything"],
+	"responses0": ["You will see the up and down arrows for liking and disliking on the center left. ", "Look at the center left and you will see two buttons one pointing up and one down. These are the like and dislike buttons. ", "If you look to the center left you will see the like and dislike buttons there. "],
+	"responses1": ["These buttons help give me feedback on what responses are working as intended and which responses could be better. ", "The like and dislike button help you better interphase with me on the responses you like and those you dislike easier, that way you can help train me. ", "These buttons help you tran me immediate with the click of a button. "], 
+	"responses2": ["So if there is a response you like or found lakcing please hit that button!", "So if there is something I said that helped or something it said that was not helpful press those buttons!", "If I say something that help or did not press those buttons to let me know!"],
+	"followups": ["Why does the bot message me?", "How do I navigate the bot?", "I need a review on how to use the chatbot", "I need help with something else.", "Can you tell me what you do?", "Can you tell me how you work?", "What is feedback?", "How do you learn with my feedback?", "How do you hadle privacy?", "I need help with something else."]
+	},
+
+	{"tag": "bot messages",
+	"patterns": ["why does the bot message me", "why do you send me messeages", "what are the messages that you send me about", "what is the purpose of the messages you send me", "how do I give you information about my child alerts"],
+	"responses0": ["I send messages when something is out of the ordinary. ", "If there is something that is abnormal I will send a message asking what is going on. ", "When something strage is detected I will send a message your way to inform you and ask what is going on. "],
+	"responses1": ["This will firstly inform you ", "First this will inform you to something going on ", "This will let you know something is up "], 
+	"responses2": ["but it'll also allow you an oppertunity to comment so that you can know looking back why the user's information was as it is.", "moreover this will allow you to write down what is going on to allow you and your doctor to look over later on.", "and secondly, will let you comment on what is going on to look at in a future time."],
+	"followups": ["How do I edit the bot message settings?", "How do I navigate the bot?", "I need a review on how to use the chatbot", "I need help with something else.", "Can you tell me what you do?", "Can you tell me how you work?", "What is feedback?", "How do you learn with my feedback?", "How do you hadle privacy?", "I need help with something else."]
+	},
+
+	{"tag": "bot messages off",
+	"patterns": ["how do I stop you from messaging me", "how do I turn off bot messages", "how do I turn on bot messages", "where do I turn on bot messages", "where do I turn off bot messages", "How do I edit the bot message settings"],
+	"responses0": ["First you navigate to the settings tab located in the ???. ", "First head to the settings tab in the ???. ", "Start by going to settings in the ???."],
+	"responses1": ["Then under chatbot you will see bot notifications ", "Once there you will see bot settings ", "When you arrive you will see bot settings "], 
+	"responses2": ["so if you wish to disable it just select if off.", "so if you want to turn it off just click off.", "with the option to turn off the chatbot messages."],
+	"followups": ["How do I navigate the bot?", "I need a review on how to use the chatbot", "I need help with something else.", "Can you tell me what you do?", "Can you tell me how you work?", "What is feedback?", "How do you learn with my feedback?", "How do you hadle privacy?", "Why does the bot message me?", "Why does the bot message me?", "I need help with something else."]
+	},
+
+	{"tag": "How to navigate bot",
+	"patterns": ["How do I navigate the bot", "What are all of the controls on the bot", "Where are all your controls", "I'm having issues navigating the chatbot", "How do I navigate this chatbot", "Where is the like button", "Where is the dislike button", "Where is the typing interphase", "Where is the options location"],
+	"responses0": ["If you are not able to find your answer first try looking through your old questions. ", "If you are unable to find what you need start by going through your old questions. ", "If you are having an issue finding what you are looking for you can begin with looking through your old questions. "],
+	"responses1": ["If you still are unable to find your answer try typing your question bellow. ", "After that try writing your question out. ", "If that doesn't work try typing your question out. "],
+	"responses2": ["After all of this you still don't have an answer to your question consider helping train me to answer your questoin!", "All else fails consider helping train me to better answer your questions in the future!", "If none of that works considering helping by training me to answer your question!"],
+	"followups": ["I need a review on how to use the chatbot.", "I need help with something else.", "Can you tell me what you do?", "Can you tell me how you work?", "What is feedback?", "How do you learn with my feedback?", "How do you hadle privacy?", "Why does the bot message me?", "Why does the bot message me?", "I need help with something else."]
+	},
+
+
+
+	{"tag": "question",
+	"patterns": ["I need help with a question", "I'd like to ask a question", "can I ask you a question", "I have a question", "May I ask you a question", "there is something I'm uncertain of", "Never mind I need help with a question"],
+	"responses0": ["What is the question related to? ", "What is the question about? ", "Can you tell me about the question? "],
+	"responses1": ["Is it a hardware, app, or ", "Do you need help with a hardware, app, or ", "Can I help you with a hardware, app, or "], 
+	"responses2": ["health question?", "medical question?"],
+	"followups": ["I need help with a hardware question.", "I need help with an APP question.", "I have a medical question.", "I need help with something else."]
+	},
+
+	{"tag": "Hardware Question Help",
+	"patterns": ["I need help with a hardware question", "I need assistance regarding a hardware question", "I am having problems with the kiddos wareable", "There is an issue with the wareable", "the kiddos device is having issues", "Can you help with a problem I'm having with the device"],
+	"responses0": ["Do you want to know more about the hardware itself ", "Does your question pretain to the device ", "Is the question related to the kiddo device "],
+	"responses1": ["or do you need help troubleshooting an issue?", "or is there an issue with the kiddo device you need help with?", "or do you need help with the device?"], 
+	"responses2": [""],
+	"followups": ["The question is a general hardware question.", "I need help troubleshooting the kiddo device.", "I need help with something else."]
+	},
+
+	{"tag": "General Hardware Questions",
+	"patterns": ["I need help with a general hardware question", "I need assistance regarding a general hardware question", "Can I have help with a general hardware question"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": ["Is the device water proof?", "How do you charge the device?", "How long does the battery last on the device?", "I need help with something else."]
+	},
+
+
+	{"tag": "Hardware Waterproof",
+	"patterns": ["Is the device water proof?", "Can I put the kiddos device into water without it breaking?", "Is the Kiddo water resistant", "Can you tell me if the Kiddos device is water resistant?"],
+	"responses0": ["The device is water resistant ", "The Kiddo is water resistant but not water proof ", "It is not water proof but is water resistant "],
+	"responses1": ["meaning it is built to last up to 10 minutes in water ", "this means it is built to last up to 10 minutes in water ", "so it is built to last up to 10 minutes in water "],
+	"responses2": ["so taking a quick bath or shower with it on is okay, but keep it away from pool parties!", "so please take it off if you are to play around in the water for an extended peroid of time!"],
+	"followups": ["How do you charge the device?", "How long does the battery last on the device?", "I need help with something else."]
+	},
+
+	{"tag": "Hardware Charging",
+	"patterns": ["How do I charge the device?", "Can you tell me how to charge the Kiddo", "How to I fill up the battery for the kiddo device", "can you tell me how to charge the battery for the device", "I need to know how to charge the kiddo device."],
+	"responses0": ["lorem ipsum"],
+	"responses1": [""],
+	"responses2": [""],
+	"followups": ["How long does the battery last on the device?", "Is the device water proof?", "I need help with something else."]
+	},
+
+	{"tag": "Hardware Battery Lifespan",
+	"patterns": ["How long does the battery last on the device", "How long before I need to charge the device again?", "Up to how many hours does the battery last", "When does the battery run out for the device", "What is the battery life on the device", "How long does the battery last on the kiddo?"],
+	"responses0": ["The battery life on the ", "The battery on the ", "For the battery on the "],
+	"responses1": ["device ", "Kiddo device ", "Kiddo "],
+	"responses2": ["lasts up to 10 days.", "can last up to 10 days if fully charged.", "needs to be charged every 10 days."],
+	"followups": ["Is the device water proof?", "How do you charge the device?", "I need help with something else."]
+	},
+
+
+	{"tag": "Hardware Troubleshooting",
+	"patterns": ["I need help troubleshooting the kiddos device", "Can you help me troubleshoot the kiddos device"],
+	"responses0": ["What ", "Can you tell me what "],
+	"responses1": ["is ", "seems to be "],
+	"responses2": ["issue?", "problem?"],
+	"followups": [""]
+	},
+
+	{"tag": "App Question Help",
+	"patterns": ["I need help with an APP question", "I need assistance regarding an App question", "I am having problems with the app", "There is an issue with the app", "the app is having an issue", "can you help with a problem I'm having with the app"],
+	"responses0": ["Do you need help with finding or setting something in the app, ", "Are you having problems locating or setting up an item in the app, ", "Is the issue finding or setting something in the app, "],
+	"responses1": ["understanding the meaning of something in the app, ", "understanding what something in the app means, ", "understanding what a value in the app means, "], 
+	"responses2": ["or do you have a question about the user's vitals?", "or is your question about the user's data?", "or is it a question about the data of the user?"],
+	"followups": ["I need help finding and/or setting something in the app.", "I have a question on what something in the app means?", "Its a question that has to do with the user's data on the app.", "I need help with something else."]
+	},
+
+	{"tag": "App Troubleshooting",
+	"patterns": ["I need help finding and/or setting something in the app", "Can you help me locate something in the app", "I need to find something in the app", "Can you show me where to locate something in the app", "Can you point out where something is in the app", "can you help me set something up in the app", "how do I set something up in the app", "I need help setting something up in app"],
+	"responses0": ["Do you want help finding an item, ", "Can I assistance you with locating something, ", "Is the area you need help with finding the item, "],
+	"responses1": ["or setting it up?", "or do you need to set something?"],
+	"responses2": [""],
+	"followups": ["I need help finding something in the app.", "I need help setting something in the app.", "I need help with something else."]
+	},
+
+	{"tag": "App Locating",
+	"patterns": ["I need help finding something in the app.", "Can you help me find something in the app?", "Can you show me where something is in the app?"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "App Setting Up Actions",
+	"patterns": ["I need help setting something in the app", "Can you help me set something up in the app", "can you show me how to set something up in the app"],
+	"responses0": ["What ", "Can you tell me what "],
+	"responses1": ["is ", "seems to be "],
+	"responses2": ["issue?", "problem?"],
+	"followups": [""]
+	},
+
+	{"tag": "App Question",
+	"patterns": ["I have a question on what something in the app means", "can you help me with what something in the app means", "Can you tell me what something in the app means"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "App User Meaning",
+	"patterns": ["Its a question that has to do with the user's data on the app", "I have a question about user information in the app", "can you help me understand what the user data means", "I need to understand the user's data in the app", "can you tell me what the user's vitals mean"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "Medical Question Help",
+	"patterns": ["I have a medical question", "I need help with a medical question", "I need assistance regarding a medical question", "I'm having a problem with something health related", "there is a medical issue", "can you help with a problem I'm having in health"],
+	"responses0": ["Is the medical question related to a general health question, ", "Is the health question about a general health question, ", "Is it a general health question, "],
+	"responses1": ["is it related to an infectious desease, ", "is it about an infectious desease, "],
+	"responses2": ["or is related to a cronic codition?", "or is it about a cronic codition?"],
+	"followups": ["Its a question that has to do with the user's data on the app.", "Its related to a general health question.", "Its related to an infectious desease.", "Its related to a cronic codition.", "I need help with something else."]
+	},
+
+	{"tag": "General Health Question",
+	"patterns": ["Its related to a general health question", "I have a question about a general medical question", "I need help with a general health question", "can you help me with a general medical question?"],
+	"responses0": ["Is the question related to ", "Is it a question about ", "Is your question about "],
+	"responses1": ["stress, sleep, or exercise?"],
+	"responses2": [""],
+	"followups": ["My question is about stress.", "My question is about sleep.", "My question is about exercise.", "I need help with something else."]
+	},
+
+
+	{"tag": "Stress Directing",
+	"patterns": ["My question is about stress", "I have a question about stress", "Can you answer my stress question.", "I have a question relating to stress", "Its related to a stress", "I need help pretaining to a stress"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "stress educational",
+	"patterns": ["what is stress", "can you tell me about stress", "is stress healthy", "how does stress impact someone", "what are the effects of stress on my child", "could you inform me on stress"],
+	"responses0": ["Stress is the result of pressures or tensions and how our body responds to them. Stress can cause feelings of unease, anxiety, frustration, nervousness, fearfulness or helplessness. When stressed, you may notice changes in your sleep, appetite or energy level. Feeling stressed is normal, especially during a crisis."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "stress signs",
+	"patterns": ["how can I see stress in my child", "what are good indicators of stress", "what should I look out for to know someone is stressed"],
+	"responses0": ["To see if someone is stressed some common changes to watch for include: excessive irritation, returning to behaviors they have outgrown, worry or sadness, unhealthy eating or sleeping habits, poor school performance or avoiding school, difficulties with attention and concentration, avoidance of activities enjoyed in the past, and unexplained headaches or body pain."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "stress helping",
+	"patterns": ["what are some ways I can help reduce stress in my child", "how can I lower stress", "whats best way to make someone not stressed", "how do I deal with stress", "are there ways to make my stress go away", "what is the best way to make my child's stress go away", "what should I do if I'm stressed"],
+	"responses0": ["If you are or someone else is stressed, try: reassuring the person who is stressed, limit their exposure to negative things including news and social media, try to keep regular routines, and have the stressed individual spend meaningful time with those they care about."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Sleep Directing",
+	"patterns": ["My question is about sleep", "I have a question about sleep", "Can you answer my sleep question.", "I have a question relating to sleep", "Its related to a sleep", "I need help pretaining to a sleep"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "sleep educational",
+	"patterns": ["Can you tell me about sleep", "can you educate me on sleeping habits", "what is sleep", "how does getting a goodnights sleep help you"],
+	"responses0": ["Getting a good night's sleep helps those who get the recommended amount of sleep recover well from physical activity and allow their immune system to fight off infections. Not getting enough sleep can lead to many adverse effects such as a weakened immune system and more fatigue. Although the amount of sleep you get each day is important, other aspects of your sleep also contribute to your health and well-being. Good sleep quality is also essential. Signs of poor sleep quality include not feeling rested even after getting enough sleep, repeatedly waking up during the night, and experiencing symptoms of sleep disorders.\nIf you wish to know more about how many hours of sleep you should be getting or how to improve your sleep let me know!"],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "sleep recommended",
+	"patterns": ["what is the recommend amount of sleep", "how many hours of sleep should I be getting", "what is the recommend amount of sleep for my child?", "what is the amount of time someone should be sleeping?"],
+	"responses0": ["How much sleep you need changes as you age, with very young children needing more sleep and older people needing less. Infants or those under a year old should get 12 to 16 hours of sleep including naps, toddlers or those from 1 to 2 should get 11 to 14 hours of sleep including naps, preschoolers or those between the ages of 3 to 5 should get 10 to 13 hours of sleep including naps, school aged children or those between the ages of 6 to 12 should get 9 to 12 hours of sleep, teens or those between 13 and 18 should get 8 to 10 hours of sleep, and adults or those above 18 should get 7 or more hours of sleep."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "sleep habits",
+	"patterns": ["how do I get better sleep", "how can someone get better sleep", "what are good sleeping habits", "how do I improve the quality of my rest", "how can I make my child get better sleep", "what are good sleep hygine habits"],
+	"responses0": ["Some habits that can improve your sleep health: going to bed at the same time each night and getting up at the same time each morning, making sure the room is quiet, dark, relaxing, and at a comfortable temperature, removing electronic devices such as TVs, computers, and phones from the bedroom, avoiding, large meals and caffeine before bed, and getting some exercise in the day."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+
+	{"tag": "Exercise Directing",
+	"patterns": ["My question is about exercise", "I have a question about exercise", "Can you answer my exercise question.", "I have a question relating to exercise", "Its related to a exercise", "I need help pretaining to a exercise"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "physical activity",
+	"patterns": ["how much exercise should my child be geting", "what types of activities should my child be doing", "what physical activities should I be doing"],
+	"responses0": ["For physical activity it ranges from being active throughout the day for preschool-aged children (ages 3 through 5 years) to being active for 60 minutes or more for school-aged children and adolescents (ages 6 through 17 years). This includes daily aerobic activities and activities that strengthen bones (like running or jumping) 3 days each week, and that build muscles (like climbing or doing push-ups) 3 days each week. This may sound like a lot, but don't worry! It's easy to meet and exceed these levels if offering enjoyable, age appropriate, and variety of physical activities with friends and family.\nIf you wish to know more about fun aerobic activities, muscle strengthening activities, and bone strengthening activities or how often such activities should be done let me know!"],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Aerobic Activity list",
+	"patterns": ["what are some good aerobic activities", "can you tell me more about aerobic activities", "what are some good ways to get some cardio in my child's play time", "how should I have more aerobic exercise"],
+	"responses0": ["Some fun moderate intensity activities may include: brisk walking, bicycle riding (flat), active recreation such as swimming and hiking, and playing games that require catching and throwing such as baseball or softball.\nSome intense activities may include: running, bicycle riding (hills), active games such as tag or flag football, jumping rope, cross country skiing, and sports like soccer, basketball, swimming, and tennis."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Aerobic Activity length",
+	"patterns": ["how long should I be running", "how long should my child be doing aerobic exercise", "for how many minutes should children do aerobic exercises", "how often should I do cardio exercises", "how long should I be swimming", "how many times a days in a week should I be doing aerobic exercise"],
+	"responses0": ["Most of your child's daily 60 minutes of physical activity should be aerobic activities, like walking, running, or anything that makes their hearts beat faster. In addition, encourage them to do aerobic activities at least 3 days a week that make them breathe fast and their hearts pound."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Muscle-Strengthening list",
+	"patterns": ["what are some good muscle strengthening activities", "can you tell me more about muscle strengthening activities", "what are some good ways to get some muscle strengthening in my child's play time", "how should I have more muscle strengthening exercise"],
+	"responses0": ["Some fun activities may include: games such as tug of war, resistance exercises using body weight or resistance bands, rope or tree climbing, and climbing on playground equipment."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Muscle-Strengthening length",
+	"patterns": ["how long should I be lifting weights", "how long should my child be doing muscle exercise", "for how many minutes should children do muscle training exercises", "how often should I do muscle-strengthening exercises", "how many times a days in a week should I be doing muscle-strengthening exercise"],
+	"responses0": ["Include muscle-strengthening activities, such as climbing or doing push-ups, at least 3 days per week as part of your child's daily 60 minutes or more."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Bone-Strengthening list",
+	"patterns": ["what are some good bone strengthening activities", "can you tell me more about bone strengthening activities", "what are some good ways to get some bone strengthening in my child's play time", "how should I have more bone strengthening exercise"],
+	"responses0": ["Some fun activities may include: hopping, skipping, jumping, jumping rope, running, and sports that involve jumping or rapid changes in direction."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Bone-Strengthening length",
+	"patterns": ["how long should I be jumping around", "how long should my child be doing bone-strengthening exercise", "for how many minutes should children do bone-strengthening exercises", "how often should I do bone-strengthening exercises", "how many times a days in a week should I be doing bone-strengthening exercise"],
+	"responses00": ["Include bone-strengthening activities, such as jumping or running, at least 3 days per week as part of your child's daily 60 minutes or more."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "age appropriate",
+	"patterns": ["what do you mean by age appropriate activities", "what are age appropriate activities", "how do I tell if the activities are age appropriate"],
+	"responses0": ["Some physical activity is better-suited for children than adolescents. For example, younger children usually strengthen their muscles when they do gymnastics, play in a jungle gym, or climb trees. Children do not usually need formal muscle-strengthening programs, such as lifting weights. As children grow older and become adolescents, they may start structured weight lifting programs. For example, they may do these types of programs along with their football or basketball team practices."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+
+
+	{"tag": "Infectious Desease Question",
+	"patterns": ["Its related to an infectious desease", "I have a question about an infectious desease.", "I needed help pretaining to an infectious desease.", "can you help me with a question relating to an infectious desease.", "can you tell me about an infectious desease."],
+	"responses0": ["Is the question related to ", "Is it a question about ", "Is your question about "],
+	"responses1": ["COVID-19, colds, or the flu?"],
+	"responses2": [""],
+	"followups": ["My question is about COVID-19.", "My question is about colds.", "My question is about the flu.", "I need help wiht something else."]
+	},
+
+
+	{"tag": "COVID-19 Directing",
+	"patterns": ["My question is about covid", "I have a question about COVID-19", "Can you answer my COVID-19 question.", "I have a question relating to covid", "Its related to a COVID-19", "I need help pretaining to a covid"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "covid eduational",
+	"patterns": ["what is covid", "what is corona virus", "can you tell me about covid 19", "where was covid 19 from", "is covid nineteen from china", "what year did the corona virus outbreak start"],
+	"responses0": ["COVID-19 (coronavirus disease 2019) is a disease caused by a virus named SARS-CoV-2 and was discovered in December 2019 in Wuhan, China. It is very contagious and has quickly spread around the world. Covid most often causes respiratory symptoms that can feel much like a cold, a flu, or pneumonia. Covid may attack more than your lungs and respiratory system. Other parts of your body may also be affected by the disease.\nIf you want to know more about covid symptoms, its spread, treatments, if you should get a test, and its difference with the flu feel free to ask!"],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "covid symptoms",
+	"patterns": ["what are some symptoms for covid nineteen", "how do I know if I have coronavirus", "can people be asymptomic with covid 19", "how long does it take for symptoms to devolp for covid 19", "what are the msot common symptoms for covid 19"],
+	"responses0": ["People with COVID-19 have had a wide range of symptoms reported ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. Anyone can have mild to severe symptoms. People with these symptoms may have covid: Fever or chills, cough, shortness of breath or difficulty breathing, fatigue, muscle or body aches, headaches, new loss of taste or smell, sore throat, congestion or runny nose, nausea or vomiting, diarrhea. However, many of those who ketch covid are asymptomatic, meaning they show no symptoms and spread the virus."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "covid spread",
+	"patterns": ["how does corona virus spread", "how did I ketch covid 19", "what are some ways covid is contracted", "how did I get covid nineteen"],
+	"responses0": ["SARS-CoV-2 the virus that causes COVID-19 like many other respiratory viruses, coronaviruses spread quickly through droplets that you project out of your mouth or nose when you breathe, cough, sneeze, or speak. Some people including those with minor or no symptoms may still spread the illness."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "covid testing who",
+	"patterns": ["should I get a covid test", "who should get covid tests", "I think I have corona virus should I get tested", "if I have covid 19 symptoms should I get tested"],
+	"responses0": ["If you have covid symptoms or have had close contact with someone with covid you should get a covid test to make certain you are not infected as well. It is important to note that if you have had covid before and recovered you should not need to be tested if they show no sign of symptoms."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "covid treatment",
+	"patterns": ["how do I treat covid 19", "if I have covid nineteen what are the best treatments", "I have the covid what do I do", "how do I get rid of the corona virus when I ketch it"],
+	"responses0": ["Treatments used for COVID-19 should be prescribed by your healthcare provider. People have been seriously harmed after taking products not approved for covid, even products approved or prescribed for other uses. The Food and Drug Administration (FDA) has approved one drug, remdesivir (Veklury), to treat covid. There are other ways to help treat symptoms related to covid such as, taking medications, like acetaminophen or ibuprofen, to reduce fever, drinking water or receiving intravenous fluids to stay hydrated, and getting plenty of rest to help the body fight the virus"],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+
+	{"tag": "Cold Directing",
+	"patterns": ["My question is about colds", "I have a question about colds", "Can you answer my colds question.", "I have a question relating to colds", "Its related to a colds", "I need help pretaining to a colds"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "cold educational",
+	"patterns": ["can you tell me about colds", "what is the common cold", "what does it mean to be sick with the common cold"],
+	"responses0": ["Many different respiratory viruses can cause the common cold, but rhinoviruses are the most common. Rhinoviruses can also trigger asthma attacks and have been linked to sinus and ear infections. Other viruses that can cause colds include respiratory syncytial virus, human parainfluenza viruses, adenovirus, common human coronaviruses, and human metapneumovirus.\nIf you want to know more about cold symptoms, its spread, treatments, and its difference with the flu feel free to ask!"],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "cold vs flu",
+	"patterns": ["what is the difference between a cold and the flu", "how do I know if I have influenza or a cold", "what are the main differnces between a cold and flu", "are there similairties between the flu and a cold", "do the cold and flu share common symptoms", "how do I know if my cold is the flu"],
+	"responses0": ["The flu, which is caused by influenza viruses, also spreads and causes illness around the same time as the common cold. Because these two illnesses have similar symptoms, it can be difficult (or even impossible) to tell the difference between them based on symptoms alone. In general, flu symptoms are worse than the common cold and can include fever or feeling feverish/chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches and fatigue (tiredness). Flu can also have very serious complications."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "cold symptoms",
+	"patterns": ["what are common symptoms of the cold", "can you list some common symptoms of the common cold", "do I have a cold?", "how do you know if you are sick with a cold", "can the cold lead to bronchitis or pneumonia", "how long does it take for you to recover from a cold"],
+	"responses0": ["Most people get colds in the winter and spring, but it is possible to get a cold any time of the year. Symptoms usually include: sore throat, runny nose, coughing, sneezing, headaches, body aches. Most people recover within about 7-10 days. However, people with weakened immune systems, asthma, or respiratory conditions may develop serious illness, such as bronchitis or pneumonia."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "cold treatment",
+	"patterns": ["how do I treat my cold", "is there a way to cure my cold", "should I take medication to get rid of my cold", "is there a cure for the common cold", "how can I get rid of my cold", "how do I treat my cold"],
+	"responses0": ["There is no cure for a cold. To feel better, you should get lots of rest and drink plenty of fluids. Over-the-counter medicines may help ease symptoms but will not make your cold go away any faster. Always read the label and use medications as directed. Talk to your doctor before giving your child non-prescription cold medicines, since some medicines contain ingredients that are not recommended for children. "],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+
+	{"tag": "Flu Directing",
+	"patterns": ["My question is about the flu", "I have a question about the flu", "Can you answer my the flu question.", "I have a question relating to the flu", "Its related to a the flu", "I need help pretaining to a the flu"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "Flu educational",
+	"patterns": ["what is the flu", "tell me about the flu", "can you tell me about influenza"],
+	"responses0": ["Influenza (flu) is a contagious respiratory illness caused by influenza viruses that infect the nose, throat, and lungs. Some people, such as older people, young children, and people with certain health conditions, are at higher risk of serious flu complications. There are two main types of influenza (flu) viruses: Types A and B. The influenza A and B viruses that routinely spread in people (human influenza viruses) are responsible for seasonal flu epidemics each year.\nIf you want to know more about flu symptoms, its spread, treatments, and its difference with covid feel free to ask!"],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Flu symptoms",
+	"patterns": ["what are indicators of having the flu", "what are some common influenza symptoms", "how do I know if I have contracted the flu", "can you tell me some common influenza symptoms"],
+	"responses0": ["Influenza (flu) can cause mild to severe illness, and at times can lead to hospitalization or worse. Flu is different from a cold. Flu usually comes on suddenly. People who have flu often feel some or all of these symptoms: fever or feeling chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches, tiredness, and sometimes vomiting and diarrhea."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Flu spread",
+	"patterns": ["how does the flu spread", "how did I ketch influenza", "what are the ways that the flu is contracted", "how did I get influenza"],
+	"responses0": ["Most experts believe that flu viruses spread mainly by tiny droplets made when people with flu cough, sneeze or talk. These droplets can land in the mouths or noses of people who are nearby. Less often, a person might get the flu by touching a surface or object that has the flu virus on it and then touching their own mouth, nose or possibly their eyes."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "Flu treatment",
+	"patterns": ["how do I treat the flu", "if I have influenza what are the best treatments", "I have the flu what do I do", "how do I get rid of the flu when I ketch it"],
+	"responses0": ["If you get sick with the flu, antiviral drugs may be a treatment option. Check with your doctor promptly if you are at higher risk of serious flu complications and you get flu symptoms. When used for treatment, antiviral drugs can lessen symptoms and shorten the time you are sick by 1 or 2 days. They also can prevent serious flu complications, like pneumonia. For people at higher risk of serious flu complications, treatment with antiviral drugs can mean the difference between milder or more serious illness, possibly resulting in a hospital stay. "],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "flu vs covid",
+	"patterns": ["what is the difference between the flu and covid", "how do I know if I have influenza and not covid", "what are the main differences between covid 19 and the flu", "can you tell me how corona virus is different from the flu"],
+	"responses0": ["Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. Covid is caused by infection with a new coronavirus (called SARS-CoV-2), and flu is caused by infection with influenza viruses. Covid seems to spread more easily than flu and causes more serious illnesses in some people such as the elderly. It is less dangerous for children than the flu. It can also take longer before people show symptoms and people can be contagious for longer. Because some of the symptoms of flu and covid are similar, it may be hard to tell the difference between them based on symptoms alone, and testing may be needed to help confirm a diagnosis."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+
+
+
+
+	{"tag": "Cronic Codition Question",
+	"patterns": ["Its related to a cronic codition", "I have a question about a cronic codition.", "I need help pretaining to a cronic codition.", "can you help me with a question relating to a cronic codition", "can you tell me about a cronic codition"],
+	"responses0": ["Is the question related to ", "Is it a question about ", "Is your question about "],
+	"responses1": ["asthma, autism, diabetes?"],
+	"responses2": [""],
+	"followups": ["My question is about asthma.", "My question is about autism.", "My question is about diabetes.", "I need help with something else."]
+	},
+
+
+
+	{"tag": "Asthma Directing",
+	"patterns": ["My question is about asthma", "I have a question about asthma", "Can you answer my asthma question.", "I have a question relating to asthma", "Its related to a asthma", "I need help pretaining to a asthma"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "asthma educational",
+	"patterns": ["Can you tell me about asthma", "What is asthma", "what does it mean that my child has asthma", "what does it mean for someone to have asthma"],
+	"responses0": ["Asthma is a disease that affects your lungs. It is one of the most common long-term diseases of children, but adults can have asthma, too. Asthma causes wheezing, breathlessness, chest tightness, and coughing at night or early in the morning. If you have asthma, you have it all the time, but you will have asthma attacks only when something bothers your lungs.\nWould you like to know more about Asthma? If so, ask me and I can tell you more about the symptoms, diagnosis, causes and risks, asthma attacks, common triggers, ways to remove triggers, and what you should do if concerned."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma symptoms",
+	"patterns": ["what are the symptoms of asthma", "what are the indicators of an asthma", "how do I know if someone has asthma", "how can I tell if someone is having an asthma", "what are indicators of asthma", "can you tell me the symptoms of asthma", "what should I look for to know if someone has asthma", "what should I look for to know if my child has asthma"],
+	"responses0": ["Asthma is a disease that affects your lungs. Its symptoms are repeated episodes of wheezing, breathlessness, chest tightness, and nighttime or early morning coughing."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma diagnosis",
+	"patterns": ["How do you diagnose asthma", "are their tests for asthma", "what is the diagnosis for asthma?"],
+	"responses0": ["It can be hard to tell if someone has asthma, especially in children under age 5. Having a doctor check how well your lungs work and check for allergies can help you find out if you have asthma. During a checkup, a doctor will ask if you cough a lot, especially at night. He or she will also ask whether your breathing problems are worse after physical activity or at certain times of year. The doctor will then ask about chest tightness, wheezing, and colds lasting more than 10 days. He or she will ask whether anyone in your family has or has had asthma, allergies, or other breathing problems. Finally, the doctor will ask questions about your home and whether you have missed school or work or have trouble doing certain things."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma treatment",
+	"patterns": ["Is there a treatment for asthma", "how do you treat asthma", "what can be done for my child with asthma", "how can I help my child with asthma", "what is the best way to treat asthma", "can you tell me some ways to treat asthma?"],
+	"responses0": ["Take your medicine exactly as your doctor tells you and stay away from things that can trigger an attack to control your asthma. Everyone with asthma does not take the same medicine. You can breathe in some medicines and take other medicines as a pill. Asthma medicines come in two types: quick-relief and long-term control. Quick-relief medicines control the symptoms of an asthma attack. If you need to use your quick-relief medicines more and more, visit your doctor to see if you need a different medicine. Long-term control medicines help you have fewer and milder attacks, but they don't help you while you are having an asthma attack."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma causes",
+	"patterns": ["what are some of the risks of asthma", "What are likely causes of asthma", "how did my child get asthma", "how does someone get asthma" , "is asthma inherited", "is asthma genetic"],
+	"responses0": ["We don’t know all the things that can cause asthma, but we do know that genetic, environmental, and occupational factors have been linked to developing asthma. If someone in your immediate family has asthma, you are more likely to have it. Atopy, the genetic tendency to develop an allergic disease, can play a big part in developing allergic asthma. However, not all asthma is allergic asthma. Being exposed to things in the environment, like mold or dampness, some allergens such as dust mites, and secondhand tobacco smoke have been linked to developing asthma. Air pollution and viral lung infection may also lead to asthma."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma attacks",
+	"patterns": ["what is an asthma attack", "how do you treat an asthma attack", "what should you do during an asthma attack", "how do I know if an asthma attack is happening", "what is happening during an asthma attack", "what are the ways you treat asthma attacks?"],
+	"responses0": ["An asthma attack may include coughing, chest tightness, wheezing, and trouble breathing. The attack happens in your body's airways, which are the paths that carry air to your lungs. As the air moves through your lungs, the airways become smaller, like the branches of a tree are smaller than the tree trunk. During an asthma attack, the sides of the airways in your lungs swell and the airways shrink. Less air gets in and out of your lungs, and mucous that your body makes clogs up the airways. An attack can be controlled by avoiding common asthma triggers and by taking medication prescribed by medical professionals."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma triggers",
+	"patterns": ["What are some common asthma triggers?", "how is an asthma attack triggered?", "how do I keep asthma attacks from happening?"],
+	"responses0": ["An asthma attack can happen when exposed to asthma triggers. Your triggers can be very different from those of someone else with asthma. Know your triggers and learn how to avoid them. Watch out for an attack when you can't avoid the triggers. Some of the most common triggers are: tobacco smoke, dust mites, outdoor air pollution, pests, pets, mold, and disinfectants. If you want to know more about a particular trigger and how to remove it feel free to ask!"],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma removing smoke triggers",
+	"patterns": ["can you tell me more about tobacco smoke", "how does tobacco smoke trigger an asthma attack", "how do I remove tobacco smoke triggers", "tell me more about smoke", "how do I get rid of tobacco triggers"],
+	"responses0": ["Tobacco smoke is unhealthy for everyone, especially people with asthma. Secondhand smoke is smoke created by a smoker and breathed in by a second person. Secondhand smoke can trigger an asthma attack. Make your home a smoke-free zone. Encourage household members who smoke to quit."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma removing mites triggers",
+	"patterns": ["can you tell me more about dust mites", "how do dust mites trigger an asthma attack", "how do I remove dust mite triggers", "tell me more about dust mites", "how do I get rid of dust mite triggers"],
+	"responses0": ["Dust mites are microscopic bugs that are in many homes. If someone has asthma and is allergic to dust mites, they can trigger an asthma attack. To prevent attacks:\nUse allergen-proof mattress and pillowcase covers to make a barrier between dust mites and yourself.\nDon't use down-filled pillows, quilts, or comforters.\nWash your bedding weekly and dry it completely.\nVacuum carpets, area rugs, and floors regularly using a vacuum equipped with a HEPA filter.\nKeep relative humidity levels in the home low, around 30- 50%."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma removing pollution triggers",
+	"patterns": ["can you tell me more about outdoor air pollution", "how does air pollution trigger an asthma attack", "how do I remove outdoor pollution triggers", "tell me more about pollution", "how do I get rid of air pollution triggers"],
+	"responses0": ["Outdoor air pollution can trigger an asthma attack. This pollution can come from many sources, including factories, cars, or wildfire smoke. Wildfire smoke from burning wood or other plants is made up of a mix of harmful gases and small particles. Breathing in too much of this smoke can cause an asthma attack. Make sure to pay attention to air quality forecasts on radio, television, and the internet to plan your activities for when air pollution levels will be low and stay in a well-ventilated area otherwise."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma removing pests triggers",
+	"patterns": ["can you tell me more about pests", "how do pests trigger an asthma attack", "how do I remove pests triggers", "tell me more about pests", "how do I get rid of pests triggers", "which pests cause asthma triggers"],
+	"responses0": ["Common pests such as mice and cockroaches can trigger an asthma attack. To best control pests in your home:\nRemove as many water and food sources as you can.\nClean dishes, crumbs, and spills right away.\nStore food in airtight containers.\nKeep trash in a closed container.\nAt least every 2 to 3 days, vacuum or sweep areas that might attract cockroaches or mice.\nSeal cracks or openings in cabinets, walls, baseboards, and around plumbing.\nUse pesticide baits and traps in areas away from children and pets, following manufacturers' instructions.\nAvoid using sprays and foggers as these can cause asthma attacks."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma removing pets triggers",
+	"patterns": ["can you tell me more about pests", "how do pests trigger an asthma attack", "how do I remove pests triggers", "tell me more about pests", "how do I get rid of pests triggers", "which pests cause asthma triggers"],
+	"responses0": ["Furry pets can trigger an asthma attack if you are allergic to them. If you think a furry pet may be causing attacks, you may want to find the pet another home. If you can't or don't want to find a new home for the pet, decrease your exposure by:\nKeeping pets out of bedrooms.\nUsing an air cleaner with HEPA filter.\nUsing allergen-proof mattress and pillow covers.\nAlso worth noting is people with asthma are not allergic to their pet's fur, so trimming a pet's fur will not help your asthma."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "asthma removing mold triggers",
+	"patterns": ["can you tell me more about mold", "how does mold trigger an asthma attack", "how do I remove mold triggers", "tell me more about mold", "how do I get rid of mold triggers", "do you need to be allergic to mold for it to cause an asthma attack"],
+	"responses0": ["Breathing in mold can trigger an asthma attack whether or not you are allergic to mold. Indoor mold growth is often found in damp areas such as kitchens, bathrooms, and basements, or in areas where water damage has occurred. To reduce mold exposure in your home:\nFix water leaks, such as leaky plumbing, which let mold grow behind walls and under floors as soon as you can.\nUse an air conditioner or dehumidifier to maintain low indoor humidity.\nGet a small tool called a hygrometer to check humidity levels and keep them as low as you can no higher than 50%. Humidity levels change over the course of a day, so check the humidity levels more than once a day.\nEmpty and clean refrigerator and air conditioner drip pans regularly.\nRun the bathroom exhaust fan or open the window when showering."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+
+
+	{"tag": "Autism Directing",
+	"patterns": ["My question is about autism", "I have a question about autism spectrum disorder", "Can you answer my ASD question.", "I have a question relating to autism", "Its related to a ASD", "I need help pretaining to a autism spectrum disorder"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": ["Can you tell me about autism?", "What are signs of autism?", "How do you diagnose autism?", "What can be done for children with autism?", "What are some of the causes of autism?", "How common is autism?", "I need help with something else."]
+	},
+
+	{"tag": "autism educational",
+	"patterns": ["Can you tell me about autism", "What is autism", "what does it mean that my child has autism", "what does it mean for someone to have autism", "what is ASD", "can you tell me about ASD"],
+	"responses0": ["Autism spectrum disorder (ASD) is a developmental disability that can cause significant social, communication and behavioral challenges. There is often nothing about how people with ASD look that sets them apart from other people, but people with ASD may communicate, interact, behave, and learn in ways that are different from most other people. The learning, thinking, and problem-solving abilities of people with ASD can range from gifted to severely challenged. Some people with ASD need a lot of help in their daily lives; others need less. \nWould you like to know more about ASD? Ask me and I can tell you more about the symptoms, diagnosis, causes and risks, and prevalence."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["What are signs of autism?", "How do you diagnose autism?", "What can be done for children with autism?", "What are some of the causes of autism?", "How common is autism?", "I need help with something else."]
+	},
+
+	{"tag": "autism symptoms",
+	"patterns": ["what are the symptoms of autims", "What are signs of autism?", "what are the indicators of autism", "how do I know if someone has autims", "how can I tell if someone has autism", "what are indicators of autism", "can you tell me the symptoms of autism", "what should I look for to know if someone has autism", "what should I look for to know if my child has autism", "what should I look for to know if my child has ASD", "How do I know if my child has ASD", "what are symptoms of ASD", "what are indicators of ASD"],
+	"responses0": ["People with Autism spectrum disorder (ASD) often have problems with social, emotional, and communication skills. They might repeat certain behaviors and might not want change in their daily activities. Many people with ASD also have different ways of learning, paying attention, or reacting to things. Signs of ASD begin during early childhood and typically last throughout a person's life."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["How do you diagnose autism?", "What can be done for children with autism?", "What are some of the causes of autism?", "How common is autism?", "Can you tell me about autism?", "I need help with something else."]
+	},
+
+	{"tag": "autism diagnosis",
+	"patterns": ["How do you diagnose autism", "are their tests for autism", "When can ASD be diagnosed", "how do doctors diagnose ASD", "what is the diagnosis for autism?"],
+	"responses0": ["Autism spectrum disorder (ASD) can sometimes be detected at 18 months or younger. By age 2, a diagnosis by an experienced professional can be considered very reliable. However, many children do not receive a final diagnosis until much older. This delay means that children with ASD might not get the early help they need."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["What can be done for children with autism?", "What are some of the causes of autism?", "How common is autism?", "Can you tell me about autism?", "What are signs of autism?", "I need help with something else."]
+	},
+
+	{"tag": "autism treatment",
+	"patterns": ["Is there a treatment for autism", "how do you treat ASD", "what can be done for my child with autism", "how can I help my child with autism", "how can I help my child with ASD", "if my child has ASD how do I help them", "is there a treatment for ASD", "what do you do to help a child with ASD", "what is the best way to treat autism", "can you tell me some ways to treat autism?", "what are some good ways to treat ASD"],
+	"responses0": ["There is currently no cure for Autism spectrum disorder (ASD). However, research shows that early intervention treatment services can improve a child's development. Early intervention services help children from birth to 3 years old (36 months) learn important skills. Services can include therapy to help the child talk, walk, and interact with others. Therefore, it is important to talk to your child's doctor as soon as possible if you think your child has ASD or other developmental problems."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["What are some of the causes of autism?", "How common is autism?", "Can you tell me about autism?", "What are signs of autism?", "How do you diagnose autism?", "I need help with something else."]
+	},
+
+	{"tag": "autism causes risks",
+	"patterns": ["what are some of the risks of autism", "what are some of the risks of ASD?", "What are likely causes of autism", "how did my child get autism", "how does someone get autism" , "is autism inherited", "is ASD inherited", "is ASD environmental", "is autism genetic"],
+	"responses0": ["We do not know all of the causes of Autism spectrum disorder (ASD). However, we have learned that there are likely many causes for multiple types of ASD. There may be many different factors that make a child more likely to have an ASD, including environmental, biologic and genetic factors."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["How common is autism?", "Can you tell me about autism?", "What are signs of autism?", "How do you diagnose autism?", "What can be done for children with autism?", "I need help with something else."]
+	},
+
+	{"tag": "autism prevalence",
+	"patterns": ["how common is autism", "what are the number of kids with autism", "is autism diagnosis going up?", "what are the statistics for autism", "how many kids in the population have autism", "what is the number of people that have autism", "are boys more likely to have ASD than girls?", "how much more likely are boys to have autism then girls?", "Is there an ASD epidemic?", "Has the number of people affected by ASD increased?"],
+	"responses0": ["About 1 in 54 children have been identified with autism spectrum disorder (ASD) according to estimates from CDC's Autism and Developmental Disabilities Monitoring (ADDM) Network last surveyed in the year 2016. These numbers are up from the year 2000 where it was 1 in 150 children. It is 4 times more common in boys than girls. More people than ever before are being diagnosed with an ASD. It is unclear exactly how much of this increase is due to a broader definition of ASD and better efforts in diagnosis. However, a true increase in the number of people with an ASD cannot be ruled out. We believe the increase in the diagnosis of ASD is likely due to a combination of these factors."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["Can you tell me about autism?", "What are signs of autism?", "How do you diagnose autism?", "What can be done for children with autism?", "What are some of the causes of autism?", "I need help with something else."]
+	},
+
+
+	{"tag": "Diabetes Directing 0",
+	"patterns": ["My question is about diabetes", "I have a question about diabetes", "Can you answer my diabetes question.", "I have a question relating to diabetes", "Its related to a diabetes", "I need help pretaining to a diabetes"],
+	"responses0": ["Is your question ", "Is the question ", "Do you want to know about "],
+	"responses1": ["diabetes type 1 or type 2?"],
+	"responses2": [""],
+	"followups": ["My question is about diabetes type 1.", "My question is about diabetes type 2.", "I need help with something else."]
+	},
+
+	{"tag": "Diabetes Type 1 Directing",
+	"patterns": ["My question is about diabetes type 1", "I have a question about type 1 diabetes", "can you answer my diabetes type 1 question", "I have a question relating to diabetes type 1.", "Its related to a type 1 diabetes", "I need help pretaining to a type 1 diabetes"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "Diabetes Type 2 Directing",
+	"patterns": ["My question is about diabetes type 2", "I have a question about type 2 diabetes", "can you answer my diabetes type 2 question", "I have a question relating to diabetes type 2.", "Its related to a type 2 diabetes", "I need help pretaining to a type 2 diabetes"],
+	"responses0": ["What ", "Can you tell me what ", "In what "],
+	"responses1": ["area would you like to know ", "can I help you better know ", "would you like to know "],
+	"responses2": ["about?", "of?"],
+	"followups": [""]
+	},
+
+	{"tag": "diabetes educational",
+	"patterns": ["Can you tell me about diabetes", "What is diabetes", "what does it mean that my child has diabetes", "what does it mean for someone to have diabetes", "what is the difference between type 1 and type 2 diabetes", "how are type 1 and type 2 diabetes different"],
+	"responses0": ["There are two types of diabetes that affect children: type 1 and type 2. Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that stops your body from making insulin. With type 2 diabetes, your body doesn't use insulin well and can't keep blood sugar at normal levels. If you wish to know more about type 1 or type 2 diabetes, just ask.\nOtherwise if you wish to know more about the symptoms, treatments, or causes of diabetes or more about type 1 or type 2 diabetes just ask and I'll tell you what I know."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 2 educational",
+	"patterns": ["What causes type 2 diabetes?", "is type 2 diabetes genetic", "how did I get type 2 diabetes", "how did my child get diabetes type 2", "do diet and lifestyle changes cause type 2 diabetes", "what is type 2 diabetes", "what does it mean to have type 2 diabetes", "can you tell me about type 2 diabetes"],
+	"responses0": ["With type 2 diabetes, your body doesn’t use insulin well and can’t keep blood sugar at normal levels. About 90-95% of people with diabetes have type 2. It develops over many years and is usually diagnosed in adults (but more and more in children, teens, and young adults). You may not notice any symptoms, so it’s important to get your blood sugar tested if you’re at risk. Type 2 diabetes can be prevented or delayed with healthy lifestyle changes, such as losing weight, eating healthy food, and being active.\nOtherwise if you wish to know more about the symptoms, treatments, or causes of diabetes just ask and I'll tell you what I know."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 1 educational",
+	"patterns": ["what is type 1 diabetes", "what does it mean to have type 1 diabetes", "can you tell me about type 1 diabetes"],
+	"responses0": ["Type 1 diabetes, your pancreas doesn't make insulin or makes very little insulin. Insulin is a hormone that helps blood sugar enter the cells in your body where it can be used for energy. Without insulin, blood sugar can't get into cells and builds up in the bloodstream. High blood sugar is damaging to the body and causes many of the symptoms and complications of diabetes.\nOtherwise if you wish to know more about the symptoms, treatments, or causes of diabetes just ask and I'll tell you what I know."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes treatment",
+	"patterns": ["How do I treat diabetes", "I have diabetes how do I treat it", "can I get rid of my diabetes", "is there a cure for diabetes", "how do you stop being diabetic", "can you stop being diabetic", "how do I make diabetes less harmful in my life", "my child has diabetes how do I help them"],
+	"responses0": ["There isn't a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help. Taking medicine as needed, getting diabetes self-management education and support, and keeping health care appointments can also reduce the impact of diabetes on your life."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 1 treatment",
+	"patterns": ["How do I treat diabetes type 1", "I have type 1 diabetes how do I treat it", "can I get rid of my type 1 diabetes", "is there a cure for diabetes type 1", "how do I make diabetes type 1 less harmful in my life", "my child has type 1 diabetes how do I help them"],
+	"responses0": ["If you have type 1 diabetes, you'll need to take insulin shots (or wear an insulin pump) every day to manage your blood sugar levels and get the energy your body needs. Insulin can't be taken as a pill because the acid in your stomach would destroy it before it could get into your bloodstream. Your doctor will work with you to figure out the most effective type and dosage of insulin for you.\nYou'll also need to check your blood sugar regularly. Ask your doctor how often you should check it and what your target blood sugar levels should be. Keeping your blood sugar levels as close to target as possible will help you prevent or delay diabetes-related complications."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 2 treatment",
+	"patterns": ["How do I treat diabetes type 2", "I have type 2 diabetes how do I treat it", "can I get rid of my type 2 diabetes", "is there a cure for diabetes type 2", "how do I make diabetes type 2 less harmful in my life", "my child has type 2 diabetes how do I help them"],
+	"responses0": ["You may be able to manage your diabetes with healthy eating and being active, or your doctor may prescribe insulin, other injectable medications, or oral diabetes medicines to help manage your blood sugar and avoid complications. You'll still need to eat healthy and be active if you take insulin or other medicines. It's also important to keep your blood pressure and cholesterol close to the targets your doctor sets for you and get necessary screening tests.\nYou'll need to check your blood sugar regularly. Ask your doctor how often you should check it and what your target blood sugar levels should be. Keeping your blood sugar levels as close to target as possible will help you prevent or delay diabetes-related complications."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes symptoms",
+	"patterns": ["what are symptoms of diabetes", "can you name some symptoms of diabetes", "how do you know if you have diabetes", "what are common symptoms someone with diabetes has"],
+	"responses0": ["Common symptoms of diabetes are urinating (peeing) a lot especially at night, being very thirsty, losing weight without trying, being very hungry, having blurry vision, having numb or tingling hands or feet, feeling very tired, having very dry skin, having sores that heal slowly, or having more infections than usual."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 1 symptoms",
+	"patterns": ["what are symptoms of type 1 diabetes", "can you name some symptoms of diabetes type 1", "how do you know if you have type 1 diabetes", "what are common symptoms someone with diabetes type 1 has"],
+	"responses0": ["It can take months or years for enough beta cells to be destroyed before symptoms of type 1 diabetes are noticed. Type 1 diabetes symptoms can develop in just a few weeks or months. Once symptoms appear, they can be severe. Common symptoms of type 1 diabetes are nausea, vomiting, stomach pains, urinating (peeing) a lot especially at night, being very thirsty, losing weight without trying, being very hungry, having blurry vision, having numb or tingling hands or feet, feeling very tired, having very dry skin, having sores that heal slowly, or having more infections than usual make sure to contact your doctor."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 2 symptoms",
+	"patterns": ["what are symptoms of type 2 diabetes", "can you name some symptoms of diabetes type 2", "how do you know if you have type 2 diabetes", "what are common symptoms someone with diabetes type 2 has"],
+	"responses0": ["Type 2 diabetes symptoms are harder to observe so if at risk by: being overweight, are less physically active, or of african american, hispanic, or american indian descent and are experiencing any of the following symptoms: urinating (peeing) a lot especially at night, being very thirsty, losing weight without trying, being very hungry, having blurry vision, having numb or tingling hands or feet, feeling very tired, having very dry skin, having sores that heal slowly, or having more infections than usual make sure to contact your doctor."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 1 causes",
+	"patterns": ["What causes type 1 diabetes?", "is type 1 diabetes genetic", "how did I get type 1 diabetes", "how did my child get diabetes type 2", "do diet and lifestyle changes cause type 1 diabetes"],
+	"responses0": ["Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that destroys the cells in the pancreas that make insulin, called beta cells. This process can go on for months or years before any symptoms appear. Some people have certain genes (traits passed on from parent to child) that make them more likely to develop type 1 diabetes, though many won't go on to have type 1 diabetes even if they have the genes. Being exposed to a trigger in the environment, such as a virus, is also thought to play a part in developing type 1 diabetes. Diet and lifestyle habits don't cause type 1 diabetes."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	},
+
+	{"tag": "diabetes 2 causes",
+	"patterns": ["What causes type 2 diabetes?", "is type 2 diabetes genetic", "how did I get type 2 diabetes", "how did my child get diabetes type 2", "do diet and lifestyle changes cause type 2 diabetes"],
+	"responses0": ["Insulin is a hormone made by your pancreas that acts like a key to let blood sugar into the cells in your body for use as energy. If you have type 2 diabetes, cells don't respond normally to insulin; this is called insulin resistance. Your pancreas makes more insulin to try to get cells to respond. Eventually your pancreas can't keep up, and your blood sugar rises, setting the stage for prediabetes and type 2 diabetes. High blood sugar is damaging to the body and can cause other serious health problems, such as heart disease, vision loss, and kidney disease."],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": ["a", "b", "c", "I need help with something else."]
+	}
+
+]} 

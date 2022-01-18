@@ -3,8 +3,18 @@
 ## Medical question database redirecting 
 ### Basic Areas that bot should be able to talk about:
 
-#### CVS
-##### 
+#### areas of improvement so far:
+
+##### Code for spefic answers chains for both medical and non-medical questions.
+##### Have chatbot (free question answer) function as a something else option to suplment block answers.
+##### Have block answers primarily function to give answer chains
+##### common questions just type in responses rather then doing an if then statement esc thing.
+##### create a way to output common responses as well to questions.
+
+
+##### Make responses less long winded and more interactive
+##### Make responses better at leading into new questions (Done with followsups being listed)
+
 
 ## Generic APP questions
 ### Basic Areas that the bot should be able to talk about:
@@ -24,9 +34,63 @@
 
 ## expand bot responces to questions to make bot not seem super repatative (consider 10 responces for each subject.)
 
+
+# Daren's Questions of the App:
+
+## What is SES? Is a high score good or a low score?
+## One the home page, are the data the most recent or averages?
+## How is daily achievement calculated?
+## What’s a normal heart rate?
+## What’s a normal temperature?
+## How much sleep does my child need?
+## The graphs have a “baseline”. What determines that baseline?
+## How is activity calculated?
+## How are alerts triggered? Is there a certain threshold for each data type? What’s the threshold?
+## How are the goals set? Can I change them?
+## What should I do if I get an alert but my child is not with me?
+## For the SES, what’s the differences between “relaxed”, “energetic” and “stressed”?
+## What changes a status from “normal” to something else?
+## It’s great to get an alert, but what am I supposed to do with the information? What’s my next action?
+## Is the watch waterproof?
+## How do I charge the watch?
+
+
+
+
+
 # empty tag
 	{"tag": "",
 	"patterns": [""],
-	"responses": [""]
+	"responses0": [""],
+	"responses1": [""], 
+	"responses2": [""],
+	"followups": [""]
 	},
 	
+
+Workflow:
+First few options for bot:
+Hi, I'm new user, need help with medical thing, need help with interphase, want to give feedback, something else
+
+Hi responses lead into:
+Need help with medical thing, need help with interphase, want to give feedback, something else
+
+
+Note:
+Add way for postive and negative responses to just have the same follow ups as before having typed them when done.
+
+
+
+
+
+
+
+Question?
+
+4 most asked questions?
+Nope bad idea due to branching, stem questions will always be chosen first. 
+
+
+Should there be a take me back option?
+So if I were to ask a question, get my answer, and that brought up a new idea should I be able to move backwards to an older response? 
+I say yes, because that is the type of quality of life stuff that brings enjoyment in using something. 

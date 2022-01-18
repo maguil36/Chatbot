@@ -42,7 +42,7 @@ def bag_of_words(sentence):
 def predict_class(sentence):
 	bow = bag_of_words(sentence)
 	res = model.predict(np.array([bow]))[0]
-	error_threshold = .25
+	error_threshold = .03
 	results = [[i, r] for i, r in enumerate(res) if r > error_threshold]
 
 	results.sort(key=lambda x: x[1], reverse=True)
@@ -58,7 +58,8 @@ def get_response(intents_list, intents_json):
 	list_of_intents = intents_json['intents']
 	for i in list_of_intents:
 		if i['tag'] == tag:
-			result = random.choice(i['responses'])
+			follow_ups_ = i['followups']
+			result = [(random.choice(i['responses0'])+random.choice(i['responses1'])+random.choice(i['responses2'])).format(name), follow_ups_]
 			break
 	return result
 
@@ -75,42 +76,58 @@ def var_finder(lst, var_searching, return_var, fail_var):
         return (return_var)
     else:
         return (fail_var)
-    
+
 def get_all_responses(var_name):
-    list_ = intents['intents']
-    for i in list_:
-        if i['tag'] == var_name:
-            return((i['responses']))
-
-print('Bot is on, say hi!')
-
+	list0_, list1_ = [], intents['intents']
+	for i in list1_:
+		if i['tag'] == var_name:
+			for s0_ in i['responses0']:
+				for s1_ in i['responses1']:
+					for s2_ in i['responses2']:
+						list0_.append(s0_ + s1_ + s2_)
+	return(list0_)
+print('Bot on.')
+## remove after the demo:
+print('Home, filler, alerts, goals, health, settings, notifications, guardians, contact us, rate the kiddo, about.')
+## remove this when you are done bridging gate between app and server, make name set based on api request from your kiddo
+name = "Marcos"
 
 res = 'temp'
 
 while True:
-	add_to_database = get_all_responses('add to databse now')
+	add_to_database_ = get_all_responses('add to database now')
 	message = spell(input('').lower())
 
-	## test variable, remove after training is done
+	## test variable, remove before release
 	if message == 'break':
 		print('turning off')
 		break
 
-	elif res == var_finder(add_to_database, res, res, False):
+    ## bot training and storing after training
+	elif res == var_finder(add_to_database_, res, res, False):
 		message_0 = input('').lower()
 		list_temp = []
 		list_temp.append(message)
 		list_temp.append(message_0)
-		res = get_response([{'intent': 'training done', 'probability': '1'}], intents)
+		res = get_response([{'intent': 'training done', 'probability': '1'}], intents)[0]
+		followups = get_response([{'intent': 'training done', 'probability': '1'}], intents)[1]
 		print(res)
-
+		if followups != [""]:
+			print(followups)
 
 	else:
 		ints = predict_class(message)
         ## bot is certain enough its the correct response 
-		if float(ints[0]['probability']) > .99:
-			res = get_response(ints, intents)
+		if float(ints[0]['probability']) > .9:
+			res = get_response(ints, intents)[0]
+			followups = get_response(ints, intents)[1]
         ## bot is uncertain answer is correct result
 		else:
-			res = get_response([{'intent': 'bot uncertain', 'probability': '1'}], intents)
+			res = get_response([{'intent': 'bot uncertain', 'probability': '1'}], intents)[0]
+			followups = get_response([{'intent': 'bot uncertain', 'probability': '1'}], intents)[1]
 		print(res)
+		if followups != [""]:
+			print(followups)
+
+		##add mechanism in app device version to save followups on user end rather then server for it to re-print after positive or negative feedback is given.
+		

@@ -1,343 +1,269 @@
 {"intents": [
 
+
 	{"tag": "bot uncertain",
-	"patterns": ["you are dumb", "I dislike you", "you're stupid", "lol"],
-	"responses": ["I'm sorry I don't understand you. Would you like to help train me to answer that? If so type (Y) and if not (N).", "I'm sorry I don't understand you. Would you consider helping training me to recognize that? If so type (Y) and if not (N).", "I'm sorry I don't understand you. Could you help train me to answer that? If so type (Y) and if not (N).", "I'm sorry I don't understand you. Would you like to help train me? If so type (Y) and if not (N).", "Sorry but I don't recognize that. Would you like to help train me to answer that? If so type (Y) and if not (N).", "Sorry but I don't recognize that. Would you consider helping training me to recognize that? If so type (Y) and if not (N).", "Sorry but I don't recognize that. Could you help train me to answer that? If so type (Y) and if not (N).", "Sorry but I don't recognize that. Would you like to help train me? If so type (Y) and if not (N).", "I don't know how to answer that. Would you like to help train me to answer that? If so type (Y) and if not (N).", "I don't know how to answer that. Would you consider helping training me to recognize that? If so type (Y) and if not (N).", "I don't know how to answer that. Could you help train me to answer that? If so type (Y) and if not (N).", "I don't know how to answer that. Would you like to help train me? If so type (Y) and if not (N).", "I'm sorry but I don't know how to answer. Would you like to help train me to answer that? If so type (Y) and if not (N).", "I'm sorry but I don't know how to answer. Would you consider helping training me to recognize that? If so type (Y) and if not (N).", "I'm sorry but I don't know how to answer. Could you help train me to answer that? If so type (Y) and if not (N).", "I'm sorry but I don't know how to answer. Would you like to help train me? If so type (Y) and if not (N).", "I'm uncertain how to respond. Would you like to help train me to answer that? If so type (Y) and if not (N).", "I'm uncertain how to respond. Would you consider helping training me to recognize that? If so type (Y) and if not (N).", "I'm uncertain how to respond. Could you help train me to answer that? If so type (Y) and if not (N).", "I'm uncertain how to respond. Would you like to help train me? If so type (Y) and if not (N).", "Sorry, but would you like to help train me to answer that. I currently do not know how to answer. If so type (Y) and if not (N).", "I currently have no answer for that. Could you spare a second to help train me? If so type (Y) and if not (N)."]
-	},
-
-	{"tag": "greeting",
-	"patterns": ["hi", "hello rob the bot", "sup rob", "whats up", "good day", "is anyone there", "good morning", "good afternoon", "good evening", "what's new", "hey there", "yo", "hi rob the bot", "sup rob the bot", "hey rob"],
-	"responses": ["Hi! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! Now how may I help you?", "Hi! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! So what do you need?", "Hi! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! In what way may I help you?", "Hi! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! Now how may I help you?", "Hi! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! So what do you need?", "Hi! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! In what way may I help you?", "Hi! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. Now how may I help you?", "Hi! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. So what do you need?", "Hi! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. In what way may I help you?", "Hello! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! Now how may I help you?", "Hello! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! So what do you need?", "Hello! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! In what way may I help you?", "Hello! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! Now how may I help you?", "Hello! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! So what do you need?", "Hello! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! In what way may I help you?", "Hello! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. Now how may I help you?", "Hello! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. So what do you need?", "Hello! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. In what way may I help you?", "Good day! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! Now how may I help you?", "Good day! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! So what do you need?", "Good day! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! In what way may I help you?", "Good day! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! Now how may I help you?", "Good day! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! So what do you need?", "Good day! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! In what way may I help you?", "Good day! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. Now how may I help you?", "Good day! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. So what do you need?", "Good day! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. In what way may I help you?", "Hey! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! Now how may I help you?", "Hey! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! So what do you need?", "Hey! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! In what way may I help you?", "Hey! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! Now how may I help you?", "Hey! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! So what do you need?", "Hey! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! In what way may I help you?", "Hey! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. Now how may I help you?", "Hey! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. So what do you need?", "Hey! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. In what way may I help you?", "Hey there! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! Now how may I help you?", "Hey there! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! So what do you need?", "Hey there! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! In what way may I help you?", "Hey there! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! Now how may I help you?", "Hey there! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! So what do you need?", "Hey there! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! In what way may I help you?", "Hey there! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. Now how may I help you?", "Hey there! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. So what do you need?", "Hey there! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. In what way may I help you?", "How are you! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! Now how may I help you?", "How are you! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! So what do you need?", "How are you! I'm Rob the bot, here to help answer your questions so feel free to ask. If you need to know what I do just ask and I'll walk you through! In what way may I help you?", "How are you! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! Now how may I help you?", "How are you! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! So what do you need?", "How are you! This is Rob the bot, here to help! If you don't know what to ask or want to know how I can help than feel free to ask what I do! In what way may I help you?", "How are you! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. Now how may I help you?", "How are you! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. So what do you need?", "How are you! I'm Rob, Rob the bot. If you need help that is what I'm made to do! If you need to know what areas I can help with ask what I do. In what way may I help you?"]
-	},
-
-	{"tag": "greeting_2",
-	"patterns": ["how's it going?", "whats happening", "how do you do", "hi how are you", "good day, how are you", "morning, how are you"],
-	"responses": ["I'm well. Is there another way I can help?", "I'm well. Any other way I can help?", "I'm well. How else can I help?", "I'm well. Anything else you need?", "I'm Good! Is there another way I can help?", "I'm Good! Any other way I can help?", "I'm Good! How else can I help?", "I'm Good! Anything else you need?", "It's going great! Is there another way I can help?", "It's going great! Any other way I can help?", "It's going great! How else can I help?", "It's going great! Anything else you need?", "I'm well. Is there another way I can help?", "I'm well. Any other way I can help?", "I'm well. How else can I help?", "I'm well. Anything else you need?", "I'm Good! Is there another way I can help?", "I'm Good! Any other way I can help?", "I'm Good! How else can I help?", "I'm Good! Anything else you need?", "It's going great! Is there another way I can help?", "It's going great! Any other way I can help?", "It's going great! How else can I help?", "It's going great! Anything else you need?", "I'm well. Is there another way I can help?", "I'm well. Any other way I can help?", "I'm well. How else can I help?", "I'm well. Anything else you need?", "I'm Good! Is there another way I can help?", "I'm Good! Any other way I can help?", "I'm Good! How else can I help?", "I'm Good! Anything else you need?", "It's going great! Is there another way I can help?", "It's going great! Any other way I can help?", "It's going great! How else can I help?", "It's going great! Anything else you need?"]
-	},
-
-	{"tag": "help",
-	"patterns": ["this is my first time using you", "help", "i need help", "can i have help", "i need assistance", "can i have assistance", "could you lend a hand", "i need to know how to use you", "i need to know how to use the bot", "i was wondering how to use the bot", "i was wondering how to use you", "i am uncertain how use the bot",  "help what do you do", "how do i use you", "what are you able to do", "what is the best questions to ask you", "what do you do?", "can you walk me through what you do?", "can you walk me through what you do?", "what questions do you answer", "what is your purpose", "what is your function", "can you tell me what you do"],
-	"responses": ["I'm a chatbot who's main goal is to help! I do this by answering questions about the hardware and software of Kiddos and its APP, answering medical questions common to those who use Kiddos, and learning from you on other questions you want me to answer! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm a chatbot who's main goal is to help! I do this by answering questions about the hardware and software of Kiddos and its APP, answering medical questions common to those who use Kiddos, and learning from you on other questions you want me to answer! But I'm not a replacement for a doctor if its serious.", "I'm a chatbot who's main goal is to help! I achieve this by doing three things. One, I answer questions about our APP and the Kiddos wearable itself. Two I help answer common medical questions. Lastly I learn from you on questions on your mind to try and better answer them to help! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm a chatbot who's main goal is to help! I achieve this by doing three things. One, I answer questions about our APP and the Kiddos wearable itself. Two I help answer common medical questions. Lastly I learn from you on questions on your mind to try and better answer them to help! But I'm not a replacement for a doctor if its serious.", "I'm a chatbot who's main goal is to help! I answer questions about the Kiddos wearable and our APP if you need help there. I also answer common medical questions. And I help by learning from you and others on subjects you'd like me to help that I don't already know! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm a chatbot who's main goal is to help! I answer questions about the Kiddos wearable and our APP if you need help there. I also answer common medical questions. And I help by learning from you and others on subjects you'd like me to help that I don't already know! But I'm not a replacement for a doctor if its serious.", "I'm a chatbot who's main goal is to help! First I help by answering questions on our wearable and its Kiddos APP. Second I help answering common medical questions. And third, I help by learning from you and others on other subjects that can be helpful to help you! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm a chatbot who's main goal is to help! First I help by answering questions on our wearable and its Kiddos APP. Second I help answering common medical questions. And third, I help by learning from you and others on other subjects that can be helpful to help you! But I'm not a replacement for a doctor if its serious.", "I'm here to help by educating! I do this by answering questions about the hardware and software of Kiddos and its APP, answering medical questions common to those who use Kiddos, and learning from you on other questions you want me to answer! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm here to help by educating! I do this by answering questions about the hardware and software of Kiddos and its APP, answering medical questions common to those who use Kiddos, and learning from you on other questions you want me to answer! But I'm not a replacement for a doctor if its serious.", "I'm here to help by educating! I achieve this by doing three things. One, I answer questions about our APP and the Kiddos wearable itself. Two I help answer common medical questions. Lastly I learn from you on questions on your mind to try and better answer them to help! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm here to help by educating! I achieve this by doing three things. One, I answer questions about our APP and the Kiddos wearable itself. Two I help answer common medical questions. Lastly I learn from you on questions on your mind to try and better answer them to help! But I'm not a replacement for a doctor if its serious.", "I'm here to help by educating! I answer questions about the Kiddos wearable and our APP if you need help there. I also answer common medical questions. And I help by learning from you and others on subjects you'd like me to help that I don't already know! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm here to help by educating! I answer questions about the Kiddos wearable and our APP if you need help there. I also answer common medical questions. And I help by learning from you and others on subjects you'd like me to help that I don't already know! But I'm not a replacement for a doctor if its serious.", "I'm here to help by educating! First I help by answering questions on our wearable and its Kiddos APP. Second I help answering common medical questions. And third, I help by learning from you and others on other subjects that can be helpful to help you! Just remember I'm not a replacement for a doctor if there is a serious health question.", "I'm here to help by educating! First I help by answering questions on our wearable and its Kiddos APP. Second I help answering common medical questions. And third, I help by learning from you and others on other subjects that can be helpful to help you! But I'm not a replacement for a doctor if its serious.", "Sure, I'm a here to help! I do this by answering questions about the hardware and software of Kiddos and its APP, answering medical questions common to those who use Kiddos, and learning from you on other questions you want me to answer! Just remember I'm not a replacement for a doctor if there is a serious health question.", "Sure, I'm a here to help! I do this by answering questions about the hardware and software of Kiddos and its APP, answering medical questions common to those who use Kiddos, and learning from you on other questions you want me to answer! But I'm not a replacement for a doctor if its serious.", "Sure, I'm a here to help! I achieve this by doing three things. One, I answer questions about our APP and the Kiddos wearable itself. Two I help answer common medical questions. Lastly I learn from you on questions on your mind to try and better answer them to help! Just remember I'm not a replacement for a doctor if there is a serious health question.", "Sure, I'm a here to help! I achieve this by doing three things. One, I answer questions about our APP and the Kiddos wearable itself. Two I help answer common medical questions. Lastly I learn from you on questions on your mind to try and better answer them to help! But I'm not a replacement for a doctor if its serious.", "Sure, I'm a here to help! I answer questions about the Kiddos wearable and our APP if you need help there. I also answer common medical questions. And I help by learning from you and others on subjects you'd like me to help that I don't already know! Just remember I'm not a replacement for a doctor if there is a serious health question.", "Sure, I'm a here to help! I answer questions about the Kiddos wearable and our APP if you need help there. I also answer common medical questions. And I help by learning from you and others on subjects you'd like me to help that I don't already know! But I'm not a replacement for a doctor if its serious.", "Sure, I'm a here to help! First I help by answering questions on our wearable and its Kiddos APP. Second I help answering common medical questions. And third, I help by learning from you and others on other subjects that can be helpful to help you! Just remember I'm not a replacement for a doctor if there is a serious health question.", "Sure, I'm a here to help! First I help by answering questions on our wearable and its Kiddos APP. Second I help answering common medical questions. And third, I help by learning from you and others on other subjects that can be helpful to help you! But I'm not a replacement for a doctor if its serious."]
-	},
-
-	{"tag": "goodbye",
-	"patterns": ["goodbye", "bye", "bye bye", "see you later", "talk to you later", "see you soon", "I've got to get going", "I must be going", "take it easy", "I'm off", "have a nice day", "have a good evening", "have a good night", "have a good morning", "have a good one", "I look forward to our next meeting", "until next time", "take care", "it was nice to see you again", "it was nice seeing you", "goodnight", "later", "catch you later", "peace", "peace out", "I'm out", "I'm out of here", "I gotta hit the road", "I've got to head out", "I need to go", "I need to leave", "thanks, goodbye", "Excellent, goodbye", "thanks for your help, goodbye", "that helped a lot, goodbye", "thanks I've got to go."],
-	"responses": ["Goodbye! Message me whenever you need help next!", "Hope to see you again soon!", "Have a good day! Message me if you need anything else!", "Nice talking! Hope we can chat again soon.", "Have a good day! Message me again if you need help!", "Talk to you later! If you need any help message me!", "Later! If you need any help message me!", "Talk to you soon! If you have questions you know where to go!", "Talk to you later. Message me whenever you need help next!", "Hope to see you again soon! Message me if you need anything else!", "Hope to see you again soon! If you need any help message me!", "Talk to you later. If you need any help message me!", "Hope to see you again soon! If you need anything message me!", "Later! Message me whenever you need help next!", "Later! Hope we can chat again soon.", "Later! If you need any help message me!"]
-	},
-
-	{"tag": "thanking",
-	"patterns": ["Thanks a bunch", "Thanks", "Thank you", "Thanks a bunch", "Thanks a ton", "I really appreciate it", "That's very kind", "I owe you one", "you rock", "I can't thank you enough", "I can't thank you enough", "I'm so grateful for", "I'm so thankful for", "Many thanks for", "I truly appreciate", "Thank you ever so much for", "It's so kind of you to", "I'm grateful for", "I cannot thank you enough for", "I want you to know how much I value", "cannot describe how grateful I am for", "Please accept my deepest thanks for", "Your support is greatly appreciated", "I'd like to express my appreciation for", "thanks rob", "thank you rob"],
-	"responses": ["Glad it helped! Anything else?", "Glad it helped! How else can I help?", "Glad it helped! Do you need anything else?", "Glad it helped! Is there something else I can do for you?", "Glad it helped! Need anything else?", "Happy it helped! Anything else?", "Happy it helped! How else can I help?", "Happy it helped! Do you need anything else?", "Happy it helped! Is there something else I can do for you?", "Happy it helped! Need anything else?", "Great! Anything else?", "Great! How else can I help?", "Great! Do you need anything else?", "Great! Is there something else I can do for you?", "Great! Need anything else?", "Your welcome! Anything else?", "Your welcome! How else can I help?", "Your welcome! Do you need anything else?", "Your welcome! Is there something else I can do for you?", "Your welcome! Need anything else?", "Perfect! Anything else?", "Perfect! How else can I help?", "Perfect! Do you need anything else?", "Perfect! Is there something else I can do for you?", "Perfect! Need anything else?"]
-	},
-
-	{"tag": "user uncertain",
-	"patterns": ["I'd like to make a complaint", "I'd like to add feedback", "can I give you some feedback", "is there a way for me to complain about something", "I don't understand", "that is the wrong response", "incorrect response", "I don't think that is the right way of saying that", "can you rephrase that", "can you say that in a different way", "please say that again", "can you word that differently", "that is not what I'm looking for", "that is not what I need", "wrong answer", "nope not what I was hoping for", "I don't think I needed to hear that", "that is not the help I needed", "that is not the help I was looking for", "I didn't want you to help me in that way", "nope, not what I wanted", "wrong, that isn't what I was hoping for"],
-	"responses": ["Would you like to help train me? If so type (Y) and if not (N)."]
-	},
-
-	{"tag": "add to database later",
-	"patterns": ["N", "n", "(n)", "(N)", "No I don't want to train you", "no I do not want to help train the bot", "I have no interest in training you", "no interest, n", "n, not interested", "no", "not now"],
-	"responses": ["Okay, can I help you in a different way then?", "Okay, do you need any other help?", "Okay, anything else I can help you with?", "Okay, can I help you in another way?", "Alright, can I help you in a different way then?", "Alright, do you need any other help?", "Alright, anything else I can help you with?", "Alright, can I help you in another way?", "Sounds good, can I help you in a different way then?", "Sounds good, do you need any other help?", "Sounds good, anything else I can help you with?", "Sounds good, can I help you in another way?", "That's alright, can I help you in a different way then?", "That's alright, do you need any other help?", "That's alright, anything else I can help you with?", "That's alright, can I help you in another way?", "Got it, can I help you in a different way then?", "Got it, do you need any other help?", "Got it, anything else I can help you with?", "Got it, can I help you in another way?"]
-	},
-
-	{"tag": "add to databse now",
-	"patterns": ["Y", "y", "(y)", "(Y)"],
-	"responses": ["First type out the response that I couldn't get right. Once that is done type out in the next line given to you what you hoped I'd do better. This will help train me to better answer questions.", "First type out the response that I couldn't get right. Once that is done type out in the next line given to you what you hoped I'd do better. Doing this will make me better at answering your questions", "First type out the response that I couldn't get right. Then type out what I can do to improve. This will help train me to better answer questions.", "First type out the response that I couldn't get right. Then type out what I can do to improve. Doing this will make me better at answering your questions", "First type out the response that I couldn't get right. Next right out how you'd like me to improve. This will help train me to better answer questions.", "First type out the response that I couldn't get right. Next right out how you'd like me to improve. Doing this will make me better at answering your questions", "Start by writing out what I messed up on. Once that is done type out in the next line given to you what you hoped I'd do better. This will help train me to better answer questions.", "Start by writing out what I messed up on. Once that is done type out in the next line given to you what you hoped I'd do better. Doing this will make me better at answering your questions", "Start by writing out what I messed up on. Then type out what I can do to improve. This will help train me to better answer questions.", "Start by writing out what I messed up on. Then type out what I can do to improve. Doing this will make me better at answering your questions", "Start by writing out what I messed up on. Next right out how you'd like me to improve. This will help train me to better answer questions.", "Start by writing out what I messed up on. Next right out how you'd like me to improve. Doing this will make me better at answering your questions"]
-	},
-
-	{"tag": "training done",
-	"patterns": ["Done training you"],
-	"responses": ["Thanks for helping train me! I'll be sending your feedback in soon. Is there another way I can help?", "Thanks for helping train me! I'll be sending your feedback in soon. Any other way I can help?", "Thanks for helping train me! I'll be sending your feedback in soon. How else can I help?", "Thanks for helping train me! I'll be sending your feedback in soon. Anything else you need?", "Thanks for training me! I'll be sending your feedback in soon. Is there another way I can help?", "Thanks for training me! I'll be sending your feedback in soon. Any other way I can help?", "Thanks for training me! I'll be sending your feedback in soon. How else can I help?", "Thanks for training me! I'll be sending your feedback in soon. Anything else you need?", "Thanks for the help! I'll be sending your feedback in soon. Is there another way I can help?", "Thanks for the help! I'll be sending your feedback in soon. Any other way I can help?", "Thanks for the help! I'll be sending your feedback in soon. How else can I help?", "Thanks for the help! I'll be sending your feedback in soon. Anything else you need?"]
-	},
-
-	{"tag": "training questions",
-	"patterns": ["how do you learn with my feedback?", "when will my feedback go into you?", "How do you integrate feedback?", "How will my training work with you?", "in what way does training you make you learn?"],
-	"responses": ["I start by recording the feedback you give me and then reviewing it with others feedback. I then have your have your feedback reviewed and integrated to help answer future questions!", "I start by recording the feedback you give me and then reviewing it with others feedback. Next I look over your feedback and use it to help answer your future questions!", "I start by recording the feedback you give me and then reviewing it with others feedback. After that I review your feedback and use it to help answer your future question!", "I learn with your feedback by recording your feedback with the feedback of others. I then have your have your feedback reviewed and integrated to help answer future questions!", "I learn with your feedback by recording your feedback with the feedback of others. Next I look over your feedback and use it to help answer your future questions!", "I learn with your feedback by recording your feedback with the feedback of others. After that I review your feedback and use it to help answer your future question!"]
-	},
-
-	{"tag": "bot questions",
-	"patterns": ["How do you work","what are you", "who are you", "what is this thing", "i need to know what this is", "How does Rob work?", "How does this bot function", "is this a machine learning bot?", "How was this bot made?", "What is the bot"],
-	"responses": ["I'm a machine learning bot! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. Speak of which, do you have any other questions?", "I'm a machine learning bot! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. On that subject, do you have any other questions?", "I'm a machine learning bot! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. So, anything else I can help you with?", "I'm a machine learning bot! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. Speak of which, do you have any other questions?", "I'm a machine learning bot! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. On that subject, do you have any other questions?", "I'm a machine learning bot! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. So, anything else I can help you with?", "I'm a bot that uses machine learning! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. Speak of which, do you have any other questions?", "I'm a bot that uses machine learning! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. On that subject, do you have any other questions?", "I'm a bot that uses machine learning! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. So, anything else I can help you with?", "I'm a bot that uses machine learning! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. Speak of which, do you have any other questions?", "I'm a bot that uses machine learning! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. On that subject, do you have any other questions?", "I'm a bot that uses machine learning! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. So, anything else I can help you with?", "I'm using machine learning! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. Speak of which, do you have any other questions?", "I'm using machine learning! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. On that subject, do you have any other questions?", "I'm using machine learning! After being given a lot of information I am able to recognize patterns that I use to help answer your questions. So, anything else I can help you with?", "I'm using machine learning! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. Speak of which, do you have any other questions?", "I'm using machine learning! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. On that subject, do you have any other questions?", "I'm using machine learning! So with a lot of information analyzed I am then able to make patterns that can be user to help answer your questions. That means that I am given a ton of information and with it I am able to figure out what you are asking and give you a good response. So, anything else I can help you with?"]
-	},
-
-	{"tag": "privacy questions bot",
-	"patterns": ["what is the privacy policy of this bot", "what messages are recorded on this bot", "how do you handle privacy", "is privacy on this bot any good?", "what information do you record", "how much of what I'm saying do you record", "can you tell me about the chatbot's privacy", "can you tell me how much of what I say is private or public"],
-	"responses": ["I don't keep any information you don't use to help me with feedback. As far as the rest of the APP goes I encourage you to read the privacy policy of the APP itself! ", "I don't keep any information you don't use to help me with feedback. On the rest of the APP, I will point you towards reading our privacy policy!", "Unless its something you type in to help train me I don't record anything. As far as the rest of the APP goes I encourage you to read the privacy policy of the APP itself! ", "Unless its something you type in to help train me I don't record anything. On the rest of the APP, I will point you towards reading our privacy policy!", "With the exception of what you type to help train me I don't record anything. As far as the rest of the APP goes I encourage you to read the privacy policy of the APP itself! ", "With the exception of what you type to help train me I don't record anything. On the rest of the APP, I will point you towards reading our privacy policy!"]
-	},
-
-	{"tag": "medical help",
-	"patterns": ["what medical questions do you answer", "what medical things do you know about?", "how can you help me medically", "what areas of medine do you know about", "what coditions does the kiddo target to help", "what things do you know that are related to health"],
-	"responses": ["The areas I am here to help with on medical questions are in the areas of asthma, autism, covid 19, diabetes, the Flu, exersize, and stress. So if you need any help on any one of those areas let me know!"]
-	},
-
-	{"tag": "autism educational",
-	"patterns": ["Can you tell me about autism", "What is autism", "what does it mean that my child has autism", "what does it mean for someone to have autism", "what is ASD", "can you tell me about ASD"],
-	"responses": ["Autism spectrum disorder (ASD) is a developmental disability  that can cause significant social, communication and behavioral challenges. There is often nothing about how people with ASD look that sets them apart from other people, but people with ASD may communicate, interact, behave, and learn in ways that are different from most other people. The learning, thinking, and problem-solving abilities of people with ASD can range from gifted to severely challenged. Some people with ASD need a lot of help in their daily lives; others need less. \nWould you like to know more about ASD? Ask me and I can tell you more about the symptoms, diagnosis, causes and risks, prevalence, and what you should do if concerned."]
-	},
-
-	{"tag": "autism symptoms",
-	"patterns": ["what are the symptoms of autims", "what are the indicators of autism", "how do I know if someone has autims", "how can I tell if someone has autism", "what are indicators of autism", "can you tell me the symptoms of autism", "what should I look for to know if someone has autism", "what should I look for to know if my child has autism", "what should I look for to know if my child has ASD", "How do I know if my child has ASD", "what are symptoms of ASD", "what are indicators of ASD"],
-	"responses": ["People with Autism spectrum disorder (ASD) often have problems with social, emotional, and communication skills. They might repeat certain behaviors and might not want change in their daily activities. Many people with ASD also have different ways of learning, paying attention, or reacting to things. Signs of ASD begin during early childhood and typically last throughout a person's life."]
-	},
-
-	{"tag": "autism diagnosis",
-	"patterns": ["How do you diagnose autism", "are their tests for autism", "When can ASD be diagnosed", "how do doctors diagnose ASD", "what is the diagnosis for autism?"],
-	"responses": ["Autism spectrum disorder (ASD) can sometimes be detected at 18 months or younger. By age 2, a diagnosis by an experienced professional can be considered very reliable. However, many children do not receive a final diagnosis until much older. This delay means that children with ASD might not get the early help they need."]
-	},
-
-	{"tag": "autism treatment",
-	"patterns": ["Is there a treatment for autism", "how do you treat ASD", "what can be done for my child with autism", "how can I help my child with autism", "how can I help my child with ASD", "if my child has ASD how do I help them", "is there a treatment for ASD", "what do you do to help a child with ASD", "what is the best way to treat autism", "can you tell me some ways to treat autism?", "what are some good ways to treat ASD"],
-	"responses": ["There is currently no cure for Autism spectrum disorder (ASD). However, research shows that early intervention treatment services can improve a child's development. Early intervention services help children from birth to 3 years old (36 months) learn important skills. Services can include therapy to help the child talk, walk, and interact with others. Therefore, it is important to talk to your child's doctor as soon as possible if you think your child has ASD or other developmental problem."]
-	},
-
-	{"tag": "autism causes risks",
-	"patterns": ["what are some of the risks of autism", "what are some of the risks of ASD?", "What are likely causes of autism", "how did my child get autism", "how does someone get autism" , "is autism inherited", "is ASD inherited", "is ASD environmental", "is autism genetic"],
-	"responses": ["We do not know all of the causes of Autism spectrum disorder (ASD). However, we have learned that there are likely many causes for multiple types of ASD. There may be many different factors that make a child more likely to have an ASD, including environmental, biologic and genetic factors."]
-	},
-
-	{"tag": "autism if concerned",
-	"patterns": ["what do I do if I think my child might have autism?", "what do I do if I think my child might have ASD", "I'm worried my child might have autism what do I do?", "I'm worried my child might have ASD, what do I do?", "if someone has ASD what should you do?", "If someone has autism what should you do?"],
-	"responses": ["If you think your child might have ASD or you think there could be a problem with the way your child plays, learns, speaks, or acts, contact your child's doctor, and share your concerns. If you or the doctor is still concerned, ask the doctor for a referral to a specialist who can do a more in-depth evaluation of your child."]
-	},
-
-	{"tag": "autism prevalence",
-	"patterns": ["how common is autism", "what are the number of kids with autism", "is autism diagnosis going up?", "what are the statistics for autism", "how many kids in the population have autism", "what is the number of people that have autism", "are boys more likely to have ASD than girls?", "how much more likely are boys to have autism then girls?", "Is there an ASD epidemic?", "Has the number of people affected by ASD increased?"],
-	"responses": ["About 1 in 54 children has been identified with autism spectrum disorder (ASD) according to estimates from CDC’s Autism and Developmental Disabilities Monitoring (ADDM) Network last surveyed in the year 2016. These numbers are up from the year 2000 where it was 1 in 150 children. It is 4 times more common in boys than girls. More people than ever before are being diagnosed with an ASD. It is unclear exactly how much of this increase is due to a broader definition of ASD and better efforts in diagnosis. However, a true increase in the number of people with an ASD cannot be ruled out. We believe the increase in the diagnosis of ASD is likely due to a combination of these factors."]
-	},
-
-	{"tag": "asthma educational",
-	"patterns": ["Can you tell me about asthma", "What is asthma", "what does it mean that my child has asthma", "what does it mean for someone to have asthma"],
-	"responses": ["Asthma is a disease that affects your lungs. It is one of the most common long-term diseases of children, but adults can have asthma, too. Asthma causes wheezing, breathlessness, chest tightness, and coughing at night or early in the morning. If you have asthma, you have it all the time, but you will have asthma attacks only when something bothers your lungs.\nWould you like to know more about Asthma? If so ask me and I can tell you more about the symptoms, diagnosis, causes and risks, asthma attacks, common triggers, ways to remove triggers, and what you should do if concerned."]
-	},
-
-	{"tag": "asthma symptoms",
-	"patterns": ["what are the symptoms of asthma", "what are the indicators of an asthma", "how do I know if someone has asthma", "how can I tell if someone is having an asthma", "what are indicators of asthma", "can you tell me the symptoms of asthma", "what should I look for to know if someone has asthma", "what should I look for to know if my child has asthma"],
-	"responses": ["Asthma is a disease that affects your lungs. It symptoms are repeated episodes of wheezing, breathlessness, chest tightness, and nighttime or early morning coughing."]
-	},
-
-	{"tag": "asthma diagnosis",
-	"patterns": ["How do you diagnose asthma", "are their tests for asthma", "what is the diagnosis for asthma?"],
-	"responses": ["It can be hard to tell if someone has asthma, especially in children under age 5. Having a doctor check how well your lungs work and check for allergies can help you find out if you have asthma. During a checkup, a doctor will ask if you cough a lot, especially at night. He or she will also ask whether your breathing problems are worse after physical activity or at certain times of year. The doctor will then ask about chest tightness, wheezing, and colds lasting more than 10 days. He or she will ask whether anyone in your family has or has had asthma, allergies, or other breathing problems. Finally, the doctor will ask questions about your home and whether you have missed school or work or have trouble doing certain things."]
-	},
-
-	{"tag": "asthma treatment",
-	"patterns": ["Is there a treatment for asthma", "how do you treat asthma", "what can be done for my child with asthma", "how can I help my child with asthma", "what is the best way to treat asthma", "can you tell me some ways to treat asthma?"],
-	"responses": ["Take your medicine exactly as your doctor tells you and stay away from things that can trigger an attack to control your asthma. Everyone with asthma does not take the same medicine. You can breathe in some medicines and take other medicines as a pill. Asthma medicines come in two types—quick-relief and long-term control. Quick-relief medicines control the symptoms of an asthma attack. If you need to use your quick-relief medicines more and more, visit your doctor to see if you need a different medicine. Long-term control medicines help you have fewer and milder attacks, but they don't help you while you are having an asthma attack."]
-	},
-
-	{"tag": "asthma causes risks",
-	"patterns": ["what are some of the risks of asthma", "What are likely causes of asthma", "how did my child get asthma", "how does someone get asthma" , "is asthma inherited", "is asthma genetic"],
-	"responses": ["An asthma attack can happen when you are exposed to asthma triggers. Your asthma triggers can be very different from someone else's asthma triggers. Know your triggers and learn how to avoid them. Watch out for an attack when you can't avoid your triggers. Some of the most common triggers are tobacco smoke, dust mites, outdoor air pollution, cockroach allergen, pets, mold, smoke from burning wood or grass, and infections like flu."]
-	},
-
-	{"tag": "asthma attacks",
-	"patterns": ["what is an asthma attack", "how do you treat an asthma attack", "what should you do during an asthma attack", "how do I know if an asthma attack is happening", "what is happening during an asthma attack", "what are the ways you treat asthma attacks?"],
-	"responses": ["An asthma attack may include coughing, chest tightness, wheezing, and trouble breathing. The attack happens in your body's airways, which are the paths that carry air to your lungs. As the air moves through your lungs, the airways become smaller, like the branches of a tree are smaller than the tree trunk. During an asthma attack, the sides of the airways in your lungs swell and the airways shrink. Less air gets in and out of your lungs, and mucous that your body makes clogs up the airways. An attack can be controlled by avoiding common asthma triggers and by taking medication prescribed by medical professionals."]
-	},
-
-	{"tag": "asthma triggers",
-	"patterns": ["What are some common asthma triggers?", "how is an asthma attack triggered?", "how do I keep asthma attacks from happening?"],
-	"responses": ["An asthma attack can happen when exposed to asthma triggers. Your triggers can be very different from those of someone else with asthma. Know your triggers and learn how to avoid them. Watch out for an attack when you can’t avoid the triggers. Some of the most common triggers are: tobacco smoke, dust mites, outdoor air pollution, pests, pets, mold, and disinfectants. If you want to know more about a particular trigger and how to remove it feel free to ask!"]
-	},
-
-	{"tag": "asthma removing smoke triggers",
-	"patterns": ["can you tell me more about tobacco smoke", "how does tobacco smoke trigger an asthma attack", "how do I remove tobacco smoke triggers", "tell me more about smoke", "how do I get rid of tobacco triggers"],
-	"responses": ["Tobacco smoke is unhealthy for everyone, especially people with asthma. Secondhand smoke is smoke created by a smoker and breathed in by a second person. Secondhand smoke can trigger an asthma attack. Make your home a smoke-free zone. Encourage household members who smoke to quit."]
-	},
-
-	{"tag": "asthma removing mites triggers",
-	"patterns": ["can you tell me more about dust mites", "how do dust mites trigger an asthma attack", "how do I remove dust mite triggers", "tell me more about dust mites", "how do I get rid of dust mite triggers"],
-	"responses": ["Dust mites are microscopic bugs that are in many homes. If someone has asthma and is allergic to dust mites, they can trigger an asthma attack. To prevent attacks:\nUse allergen-proof mattress and pillowcase covers to make a barrier between dust mites and yourself.\nDon’t use down-filled pillows, quilts, or comforters.\nWash your bedding weekly and dry it completely.\nVacuum carpets, area rugs, and floors regularly using a vacuum equipped with a HEPA filter.\nKeep relative humidity levels in the home low, around 30- 50%."]
-	},
-
-	{"tag": "asthma removing pollution triggers",
-	"patterns": ["can you tell me more about outdoor air pollution", "how does air pollution trigger an asthma attack", "how do I remove outdoor pollution triggers", "tell me more about pollution", "how do I get rid of air pollution triggers"],
-	"responses": ["Outdoor air pollution can trigger an asthma attack. This pollution can come from many sources, including factories, cars, or wildfire smoke. Wildfire smoke from burning wood or other plants is made up of a mix of harmful gases and small particles. Breathing in too much of this smoke can cause an asthma attack. Make sure to pay attention to air quality forecasts on radio, television, and the internet to plan your activities for when air pollution levels will be low and stay in a well ventalated area otherwise."]
-	},
-
-	{"tag": "asthma removing pests triggers",
-	"patterns": ["can you tell me more about pests", "how do pests trigger an asthma attack", "how do I remove pests triggers", "tell me more about pests", "how do I get rid of pests triggers", "which pests cause asthma triggers"],
-	"responses": ["Common pests such as mice and cockroaches can trigger an asthma attack. To best control pests in your home:\nRemove as many water and food sources as you can.\nClean dishes, crumbs, and spills right away.\nStore food in airtight containers.\nKeep trash in a closed container.\nAt least every 2 to 3 days, vacuum or sweep areas that might attract cockroaches or mice.\nSeal cracks or openings in cabinets, walls, baseboards, and around plumbing.\nUse pesticide baits and traps in areas away from children and pets, following manufacturers’ instructions.\nAvoid using sprays and foggers as these can cause asthma attacks."]
-	},
-
-	{"tag": "asthma removing pets triggers",
-	"patterns": ["can you tell me more about pests", "how do pests trigger an asthma attack", "how do I remove pests triggers", "tell me more about pests", "how do I get rid of pests triggers", "which pests cause asthma triggers"],
-	"responses": ["Furry pets can trigger an asthma attack if you are allergic to them. If you think a furry pet may be causing attacks, you may want to find the pet another home. If you can’t or don’t want to find a new home for the pet, decrease your exposure by:\nKeeping pets out of bedrooms.\nUsing an air cleaner with HEPA filter.\nUsing allergen-proof mattress and pillow covers.\n Also worth noting is people with asthma are not allergic to their pet’s fur, so trimming a pet’s fur will not help your asthma."]
-	},
-
-	{"tag": "asthma removing mold triggers",
-	"patterns": ["can you tell me more about mold", "how does mold trigger an asthma attack", "how do I remove mold triggers", "tell me more about mold", "how do I get rid of mold triggers", "do you need to be allergic to mold for it to cause an asthma attack"],
-	"responses": ["Breathing in mold can trigger an asthma attack whether or not you are allergic to mold. Indoor mold growth is often found in damp areas such as kitchens, bathrooms, and basements, or in areas where water damage has occurred. To reduce mold exposure in your home:\nFix water leaks, such as leaky plumbing, which let mold grow behind walls and under floors as soon as you can.\nUse an air conditioner or dehumidifier to maintain low indoor humidity.\nGet a small tool called a hygrometer to check humidity levels and keep them as low as you can—no higher than 50%. Humidity levels change over the course of a day, so check the humidity levels more than once a day.\nEmpty and clean refrigerator and air conditioner drip pans regularly.\nRun the bathroom exhaust fan or open the window when showering."]
-	},
-
-	{"tag": "diabetes educational",
-	"patterns": ["Can you tell me about diabetes", "What is diabetes", "what does it mean that my child has diabetes", "what does it mean for someone to have diabetes", "what is the difference between type 1 and type 2 diabetes", "how are type 1 and type 2 diabetes different"],
-	"responses": ["There are two types of diabetes that affect children: type 1 and type 2. Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that stops your body from making insulin. With type 2 diabetes, your body doesn't use insulin well and can't keep blood sugar at normal levels. If you wish to know more about type 1 or type 2 diabetes just ask.\nOtherwise if you wish to know more about the symptoms, treatments, or causes of diabetes just ask and I'll tell you what I know."]
-	},
-
-	{"tag": "diabetes 1 educational",
-	"patterns": ["What causes type 1 diabetes?", "is type 1 diabetes genetic", "how did I get type 1 diabetes", "how did my child get diabetes type 1", "do diet and lifestyle changes cause type 1 diabetes", "what is type 1 diabetes", "what does it mean to have type 1 diabetes", "can you tell me about type 1 diabetes"],
-	"responses": ["Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that destroys the cells in the pancreas that make insulin, called beta cells. This process can go on for months or years before any symptoms appear. Some people have certain genes (traits passed on from parent to child) that make them more likely to develop type 1 diabetes, though many won’t go on to have type 1 diabetes even if they have the genes. Being exposed to a trigger in the environment, such as a virus, is also thought to play a part in developing type 1 diabetes. Diet and lifestyle habits don’t cause type 1 diabetes.\nOtherwise if you wish to know more about the symptoms, treatments, or causes of diabetes just ask and I'll tell you what I know."]
-	},
-
-	{"tag": "diabetes 2 educational",
-	"patterns": ["What causes type 2 diabetes?", "is type 2 diabetes genetic", "how did I get type 2 diabetes", "how did my child get diabetes type 2", "do diet and lifestyle changes cause type 2 diabetes", "what is type 2 diabetes", "what does it mean to have type 2 diabetes", "can you tell me about type 2 diabetes"],
-	"responses": ["Insulin is a hormone made by your pancreas that acts like a key to let blood sugar into the cells in your body for use as energy. If you have type 2 diabetes, cells don’t respond normally to insulin; this is called insulin resistance. Your pancreas makes more insulin to try to get cells to respond. Eventually your pancreas can’t keep up, and your blood sugar rises, setting the stage for prediabetes and type 2 diabetes. High blood sugar is damaging to the body and can cause other serious health problems, such as heart disease, vision loss, and kidney disease.\nOtherwise if you wish to know more about the symptoms, treatments, or causes of diabetes just ask and I'll tell you what I know."]
-	},
-
-	{"tag": "diabetes 1 educational",
-	"patterns": ["what is type 1 diabetes", "what does it mean to have type 1 diabetes", "can you tell me about type 1 diabetes"],
-	"responses": ["Type 1 diabetes, your pancreas doesn’t make insulin or makes very little insulin. Insulin is a hormone that helps blood sugar enter the cells in your body where it can be used for energy. Without insulin, blood sugar can’t get into cells and builds up in the bloodstream. High blood sugar is damaging to the body and causes many of the symptoms and complications of diabetes."]
-	},
-
-	{"tag": "diabetes treatment",
-	"patterns": ["How do I treat diabetes", "I have diabetes how do I treat it", "can I get rid of my diabetes", "is there a cure for diabetes", "how do you stop being diabetic", "can you stop being diabetic", "how do I make diabetes less harmful in my life", "my child has diabetes how do I help them"],
-	"responses": ["There isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help. Taking medicine as needed, getting diabetes self-management education and support, and keeping health care appointments can also reduce the impact of diabetes on your life."]
-	},
-
-	{"tag": "diabetes 1 treatment",
-	"patterns": ["How do I treat diabetes type 1", "I have type 1 diabetes how do I treat it", "can I get rid of my type 1 diabetes", "is there a cure for diabetes type 1", "how do I make diabetes type 1 less harmful in my life", "my child has type 1 diabetes how do I help them"],
-	"responses": ["If you have type 1 diabetes, you’ll need to take insulin shots (or wear an insulin pump) every day to manage your blood sugar levels and get the energy your body needs. Insulin can’t be taken as a pill because the acid in your stomach would destroy it before it could get into your bloodstream. Your doctor will work with you to figure out the most effective type and dosage of insulin for you.\nYou’ll also need to check your blood sugar regularly. Ask your doctor how often you should check it and what your target blood sugar levels should be. Keeping your blood sugar levels as close to target as possible will help you prevent or delay diabetes-related complications."]
-	},
-
-	{"tag": "diabetes 2 treatment",
-	"patterns": ["How do I treat diabetes type 2", "I have type 2 diabetes how do I treat it", "can I get rid of my type 2 diabetes", "is there a cure for diabetes type 2", "how do I make diabetes type 2 less harmful in my life", "my child has type 2 diabetes how do I help them"],
-	"responses": ["You may be able to manage your diabetes with healthy eating and being active, or your doctor may prescribe insulin, other injectable medications, or oral diabetes medicines to help manage your blood sugar and avoid complications. You’ll still need to eat healthy and be active if you take insulin or other medicines. It’s also important to keep your blood pressure and cholesterol close to the targets your doctor sets for you and get necessary screening tests.\nYou’ll need to check your blood sugar regularly. Ask your doctor how often you should check it and what your target blood sugar levels should be. Keeping your blood sugar levels as close to target as possible will help you prevent or delay diabetes-related complications."]
-	},
-
-	{"tag": "diabetes symptoms",
-	"patterns": ["what are symptoms of diabetes", "can you name some symptoms of diabetes", "how do you know if you have diabetes", "what are common symptoms someone with diabetes has"],
-	"responses": ["Common symptoms of diabetes are urinating (peeing) a lot especially at night, being very thirsty, losing weight without trying, being very hungry, having blurry vision, having numb or tingling hands or feet, feeling very tired, having very dry skin, having sores that heal slowly, or having more infections than usual."]
-	},
-
-	{"tag": "diabetes 1 symptoms",
-	"patterns": ["what are symptoms of type 1 diabetes", "can you name some symptoms of diabetes type 1", "how do you know if you have type 1 diabetes", "what are common symptoms someone with diabetes type 1 has"],
-	"responses": ["Common symptoms of type 1 diabetes are nausea, vomiting, and stomach pains. In addition urinating (peeing) a lot especially at night, being very thirsty, losing weight without trying, being very hungry, having blurry vision, having numb or tingling hands or feet, feeling very tired, having very dry skin, having sores that heal slowly, or having more infections than usual."]
-	},
-
-	{"tag": "diabetes 2 symptoms",
-	"patterns": ["what are symptoms of type 2 diabetes", "can you name some symptoms of diabetes type 2", "how do you know if you have type 2 diabetes", "what are common symptoms someone with diabetes type 2 has"],
-	"responses": ["Type 2 diabetes symptoms are harder to observe so if at risk by: being overweight, are less physically active, or of african american, hispanic, or american indian decent and are expirencing any of the follwing symptoms: urinating (peeing) a lot especially at night, being very thirsty, losing weight without trying, being very hungry, having blurry vision, having numb or tingling hands or feet, feeling very tired, having very dry skin, having sores that heal slowly, or having more infections than usual make sure to contact your doctor."]
-	},
-
-	{"tag": "diabetes 1 causes",
-	"patterns": ["What causes type 1 diabetes?", "is type 1 diabetes genetic", "how did I get type 1 diabetes", "how did my child get diabetes type 2", "do diet and lifestyle changes cause type 1 diabetes"],
-	"responses": ["Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that destroys the cells in the pancreas that make insulin, called beta cells. This process can go on for months or years before any symptoms appear. Some people have certain genes (traits passed on from parent to child) that make them more likely to develop type 1 diabetes, though many won’t go on to have type 1 diabetes even if they have the genes. Being exposed to a trigger in the environment, such as a virus, is also thought to play a part in developing type 1 diabetes. Diet and lifestyle habits don’t cause type 1 diabetes."]
-	},
-
-	{"tag": "diabetes 2 causes",
-	"patterns": ["What causes type 2 diabetes?", "is type 2 diabetes genetic", "how did I get type 2 diabetes", "how did my child get diabetes type 2", "do diet and lifestyle changes cause type 2 diabetes"],
-	"responses": ["Insulin is a hormone made by your pancreas that acts like a key to let blood sugar into the cells in your body for use as energy. If you have type 2 diabetes, cells don’t respond normally to insulin; this is called insulin resistance. Your pancreas makes more insulin to try to get cells to respond. Eventually your pancreas can’t keep up, and your blood sugar rises, setting the stage for prediabetes and type 2 diabetes. High blood sugar is damaging to the body and can cause other serious health problems, such as heart disease, vision loss, and kidney disease."]
-	},
-
-	{"tag": "Flu educational",
-	"patterns": ["what is the flu", "tell me about the flu", "can you tell me about influenza"],
-	"responses": ["Influenza (flu) is a contagious respiratory illness caused by influenza viruses that infect the nose, throat, and lungs. Some people, such as older people, young children, and people with certain health conditions, are at higher risk of serious flu complications. There are two main types of influenza (flu) viruses: Types A and B. The influenza A and B viruses that routinely spread in people (human influenza viruses) are responsible for seasonal flu epidemics each year.\nIf you want to know more about flu symptoms, its spread, treatments, and its difference with covid feel free to ask!"]
-	},
-
-	{"tag": "Flu symptoms",
-	"patterns": ["what are indicators of having the flu", "what are some common influenza symptoms", "how do I know if I have contracted the flu", "can you tell me some common influenza symptoms"],
-	"responses": ["Influenza (flu) can cause mild to severe illness, and at times can lead to death. Flu is different from a cold. Flu usually comes on suddenly. People who have flu often feel some or all of these symptoms: fever or feeling chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches, tiredness, and sometimes vomiting and diarrhea."]
-	},
-
-	{"tag": "Flu spread",
-	"patterns": ["how does the flu spread", "how did I ketch influenza", "what are the ways that the flu is contracted", "how did I get influenza"],
-	"responses": ["Most experts believe that flu viruses spread mainly by tiny droplets made when people with flu cough, sneeze or talk. These droplets can land in the mouths or noses of people who are nearby. Less often, a person might get flu by touching a surface or object that has flu virus on it and then touching their own mouth, nose or possibly their eyes."]
-	},
-
-	{"tag": "Flu treatment",
-	"patterns": ["how do I treat the flu", "if I have influenza what are the best treatments", "I have the flu what do I do", "how do I get rid of the flu when I ketch it"],
-	"responses": ["If you get sick with flu, antiviral drugs may be a treatment option. Check with your doctor promptly if you are at higher risk of serious flu complications and you get flu symptoms. When used for treatment, antiviral drugs can lessen symptoms and shorten the time you are sick by 1 or 2 days. They also can prevent serious flu complications, like pneumonia. For people at higher risk of serious flu complications, treatment with antiviral drugs can mean the difference between milder or more serious illness possibly resulting in a hospital stay. "]
-	},
-
-	{"tag": "flu vs covid",
-	"patterns": ["what is the difference between the flu and covid", "how do I know if I have influenza and not covid", "what are the main differences between covid 19 and the flu", "can you tell me how corona virus is different from the flu"],
-	"responses": ["Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. Covid is caused by infection with a new coronavirus (called SARS-CoV-2), and flu is caused by infection with influenza viruses. Covid seems to spread more easily than flu and causes more serious illnesses in some people such as the elderly. It is less dangerous for children than the flu. It can also take longer before people show symptoms and people can be contagious for longer. Because some of the symptoms of flu and covid are similar, it may be hard to tell the difference between them based on symptoms alone, and testing may be needed to help confirm a diagnosis."]
-	},
-
-	{"tag": "covid eduational",
-	"patterns": ["what is covid", "what is corona virus", "can you tell me about covid 19", "where was covid 19 from", "is covid nineteen from china", "what year did the corona virus outbreak start"],
-	"responses": ["COVID-19 (coronavirus disease 2019) is a disease caused by a virus named SARS-CoV-2 and was discovered in December 2019 in Wuhan, China. It is very contagious and has quickly spread around the world. Covid most often causes respiratory symptoms that can feel much like a cold, a flu, or pneumonia. Covid may attack more than your lungs and respiratory system. Other parts of your body may also be affected by the disease.\nIf you want to know more about covid symptoms, its spread, treatments, if you should get a test, and its difference with the flu feel free to ask!"]
-	},
-
-	{"tag": "covid symptoms",
-	"patterns": ["what are some symptoms for covid nineteen", "how do I know if I have coronavirus", "can people be asymptomic with covid 19", "how long does it take for symptoms to devolp for covid 19", "what are the msot common symptoms for covid 19"],
-	"responses": ["People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. Anyone can have mild to severe symptoms. People with these symptoms may have covid: Fever or chills, cough, shortness of breath or difficulty breathing, fatigue, muscle or body aches, headaches, new loss of taste or smell, sore throat, congestion or runny nose, nausea or vomiting, diarrhea. However, many of those who ketch covid 19 are asymptomic, meaning they show no symptoms and spread the virus. If someone is exposed to someone with covid like symptoms consider testing taking a covid test as if they themselves had symptoms."]
-	},
-
-	{"tag": "covid spread",
-	"patterns": ["how does corona virus spread", "how did I ketch covid 19", "what are some ways covid is contracted", "how did I get covid nineteen"],
-	"responses": ["SARS-CoV-2 the virus that causes COVID-19 like many other respiratory viruses, coronaviruses spread quickly through droplets that you project out of your mouth or nose when you breathe, cough, sneeze, or speak. Some people including those with minor or no symptoms may still spread the illness."]
-	},
-
-	{"tag": "covid testing who",
-	"patterns": ["should I get a covid test", "who should get covid tests", "I think I have corona virus should I get tested", "if I have covid 19 symptoms should I get tested"],
-	"responses": ["If you have covid symptoms or have had close contact with someone with covid you should get a covid test to make certain you are not infected as well. It is important to note that if you have had covid 19 before and recovered should not need to be tested if they show no sign of symptoms."]
-	},
-
-	{"tag": "covid treatment",
-	"patterns": ["how do I treat covid 19", "if I have covid nineteen what are the best treatments", "I have the covid what do I do", "how do I get rid of the corona virus when I ketch it"],
-	"responses": ["Treatments used for COVID-19 should be prescribed by your healthcare provider. People have been seriously harmed after taking products not approved for covid, even products approved or prescribed for other uses. The Food and Drug Administration (FDA) has approved one drug, remdesivir (Veklury), to treat covid. There are other ways to help treat symptoms related to covid such as, taking medications, like acetaminophen or ibuprofen, to reduce fever, drinking water or receiving intravenous fluids to stay hydrated, and getting plenty of rest to help the body fight the virus"]
-	},
-
-	{"tag": "cold educational",
-	"patterns": ["can you tell me about colds", "what is the common cold", "what does it mean to be sick with the common cold"],
-	"responses": ["Many different respiratory viruses can cause the common cold, but rhinoviruses are the most common. Rhinoviruses can also trigger asthma attacks and have been linked to sinus and ear infections. Other viruses that can cause colds include respiratory syncytial virus, human parainfluenza viruses, adenovirus, common human coronaviruses, and human metapneumovirus.\nIf you want to know more about cold symptoms, its spread, treatments, and its difference with the flu feel free to ask!"]
-	},
-
-	{"tag": "cold vs flu",
-	"patterns": ["what is the difference between a cold and the flu", "how do I know if I have influenza or a cold", "what are the main differnces between a cold and flu", "are there similairties between the flu and a cold", "do the cold and flu share common symptoms", "how do I know if my cold is the flu"],
-	"responses": ["The flu, which is caused by influenza viruses, also spreads and causes illness around the same time as the common cold. Because these two illnesses have similar symptoms, it can be difficult (or even impossible) to tell the difference between them based on symptoms alone. In general, flu symptoms are worse than the common cold and can include fever or feeling feverish/chills, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches and fatigue (tiredness). Flu can also have very serious complications."]
-	},
-
-	{"tag": "cold symptoms",
-	"patterns": ["what are common symptoms of the cold", "can you list some common symptoms of the common cold", "do I have a cold?", "how do you know if you are sick with a cold", "can the cold lead to bronchitis or pneumonia", "how long does it take for you to recover from a cold"],
-	"responses": ["Most people get colds in the winter and spring, but it is possible to get a cold any time of the year. Symptoms usually include: sore throat, runny nose, coughing, sneezing, headaches, body aches. Most people recover within about 7-10 days. However, people with weakened immune systems, asthma, or respiratory conditions may develop serious illness, such as bronchitis or pneumonia."]
-	},
-
-	{"tag": "cold treatment",
-	"patterns": ["how do I treat my cold", "is there a way to cure my cold", "should I take medication to get rid of my cold", "is there a cure for the common cold", "how can I get rid of my cold", "how do I treat my cold"],
-	"responses": ["There is no cure for a cold. To feel better, you should get lots of rest and drink plenty of fluids. Over-the-counter medicines may help ease symptoms but will not make your cold go away any faster. Always read the label and use medications as directed. Talk to your doctor before giving your child nonprescription cold medicines, since some medicines contain ingredients that are not recommended for children. "]
-	},
-
-	{"tag": "physical activity",
-	"patterns": ["how much exersize should my child be geting", "what types of activities should my child be doing", "what physical activities should I be doing"],
-	"responses": ["For physical activity it ranges from being active throughout the day for preschool-aged children (ages 3 through 5 years) to being active for 60 minutes or more for school-aged children and adolescents (ages 6 through 17 years). This includes including daily aerobic – and activities that strengthen bones (like running or jumping) – 3 days each week, and that build muscles (like climbing or doing push-ups) – 3 days each week. This may sound like a lot, but don’t worry! Its easy to meet an exceed these levels if offering enjoyable, age appropriate, and variety of physical activities with friends and family.\nIf you wish to know more about aerobic activity, muscle strengthening, bone strengthening, and age appropriate activities just ask!"]
-	},
-
-	{"tag": "Aerobic Activity",
-	"patterns": ["what are some good aerobic activities", "can you tell me more about aerobic activities", "what are some good ways to get some cardio in my child's play time", "how should I have more aerobic exersize"],
-	"responses": ["Most of your child’s daily 60 minutes of physical activity should be aerobic activities, like walking, running, or anything that makes their hearts beat faster. In addition, encourage them to do aerobic activities at least 3 days a week that make them breathe fast and their hearts pound.\nSome fun moderate intensity activies may include: brisk walking, bicycle riding (flat), active recreation such as swimming and hiking, and playing games that require ketching and throwing such as baseball or softball.\nSome vigorous intensity activities may include: running, bicycle riding (hills), active games such as tag or flag football, jumping rope, cross country skiing, and sports like soccer, basketball swimming and tennis."]
-	},
-
-	{"tag": "Muscle-Strengthening",
-	"patterns": ["what are some good muscle strengthening activities", "can you tell me more about muscle strengthening activities", "what are some good ways to get some muscle strengthening in my child's play time", "how should I have more muscle strengthening exersize"],
-	"responses": ["Include muscle-strengthening activities, such as climbing or doing push-ups, at least 3 days per week as part of your child’s daily 60 minutes or more.\nSome fun activies may include: games such as tug of war, resistance exercises using body weight or resistance bands, rope or tree climbing, and climbing on playground equipment."]
-	},
-
-	{"tag": "Bone-Strengthening",
-	"patterns": ["what are some good bone strengthening activities", "can you tell me more about bone strengthening activities", "what are some good ways to get some bone strengthening in my child's play time", "how should I have more bone strengthening exersize"],
-	"responses": ["Include bone-strengthening activities, such as jumping or running, at least 3 days per week as part of your child’s daily 60 minutes or more.\nSome fun activies may include: hopping skipping jumping, jumping rope, running, and sports that involve jumping or rapid changes in direction such as soccer."]
-	},
-
-	{"tag": "age appropriate",
-	"patterns": ["what do you mean by age appropriate activities", "what are age appropriate activities", "how do I tell if the activities are age appropriate"],
-	"responses": ["Some physical activity is better-suited for children than adolescents. For example, younger children usually strengthen their muscles when they do gymnastics, play on a jungle gym, or climb trees. Children do not usually need formal muscle-strengthening programs, such as lifting weights. As children grow older and become adolescents, they may start structured weight lifting programs. For example, they may do these types of programs along with their football or basketball team practices."]
-	},
-
-	{"tag": "stress",
-	"patterns": ["how can I see stress in my child", "what are good indicators of stress", "what should I look out for to know someone is stressed"],
-	"responses": ["To see if someone is stressed some common changes to watch for include: excessive irritation, returning to behaviors they have outgrown, worry or sadness, unhealthy eating or sleeping habits, poor school performance or avoiding school, difficulties with attention and concentration, avoidance of activities enjoyed in the past, and unexplained headaches or body pain."]
-	},
-
-	{"tag": "stress helping",
-	"patterns": ["what are some ways I can help reduce stress in my child", "how can I lower stress", "whats best way to make someone not stressed", "how do I deal with stress", "are there ways to make my stress go away", "what is the best way to make my child's stress go away", "what should I do if I'm stressed"],
-	"responses": ["If you are or someone else is stressed, try: reassuring the person who is stressed, limit their exposure to negative things including news and social media, try to keep regular routines, and have the stressed individual spend meaningful time with those they care about."]
+	"patterns": ["lol"],
+	"responses0": ["I'm sorry I don't understand you. ", "Sorry but I don't recognize that. ", "I don't know how to answer that. ", "I'm sorry but I don't know how to answer. ", "I'm uncertain how to respond. "],
+	"responses1": ["Would you like to help train me to answer that? ", "Would you consider helping training me to recognize that? ", "Could you help train me to answer that? ", "Would you like to help train me? "], 
+	"responses2": ["If so type (Y) and if not (N)."],
+	"followups": ["Y", "N", "I need help with something else."]
 	},
 
 	{"tag": "training",
 	"patterns": ["train", "training"],
-	"responses": ["First type out the response that I couldn't get right. Once that is done type out in the next line given to you what you hoped I'd do better. This will help train me to better answer questions.", "First type out the response that I couldn't get right. Once that is done type out in the next line given to you what you hoped I'd do better. Doing this will make me better at answering your questions", "First type out the response that I couldn't get right. Then type out what I can do to improve. This will help train me to better answer questions.", "First type out the response that I couldn't get right. Then type out what I can do to improve. Doing this will make me better at answering your questions", "First type out the response that I couldn't get right. Next right out how you'd like me to improve. This will help train me to better answer questions.", "First type out the response that I couldn't get right. Next right out how you'd like me to improve. Doing this will make me better at answering your questions", "Start by writing out what I messed up on. Once that is done type out in the next line given to you what you hoped I'd do better. This will help train me to better answer questions.", "Start by writing out what I messed up on. Once that is done type out in the next line given to you what you hoped I'd do better. Doing this will make me better at answering your questions", "Start by writing out what I messed up on. Then type out what I can do to improve. This will help train me to better answer questions.", "Start by writing out what I messed up on. Then type out what I can do to improve. Doing this will make me better at answering your questions", "Start by writing out what I messed up on. Next right out how you'd like me to improve. This will help train me to better answer questions.", "Start by writing out what I messed up on. Next right out how you'd like me to improve. Doing this will make me better at answering your questions"]
+	"responses0": ["First tell me the issue of where I could improve. ", "Start by writing out what area I could improve in. ", "Begin with telling me what you'd like to be improved. "],
+	"responses1": ["Then in the next line tell me what you'd have liked to see.", "In the next line tell me what you were hoping to see.", "After that in the next line type what you hoped to see."], 
+	"responses2": [""],
+	"followups": [""]
+	},
+
+
+
+	{"tag": "greeting",
+	"patterns": ["hi", "hello rob the bot", "sup rob", "whats up", "good day", "is anyone there", "good morning", "good afternoon", "good evening", "what's new", "hey there", "yo", "hi rob the bot", "sup rob the bot", "hey rob"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need help with a question.", "I want to give feedback.", "I'm new!", "I need help with something else."]
+	},
+
+	{"tag": "greeting_1",
+	"patterns": ["how's it going?", "whats happening", "how do you do", "hi how are you", "good day, how are you", "morning, how are you"],
+	"responses0": ["I'm well", "I'm good", "It's going great"],
+	"responses1": ["! ", ". ", " {}! "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I need help with a question.", "Can you show me the most common questions?", "I want to give feedback.", "I'm new!", "I need help with something else."]
+	},
+
+	{"tag": "help",
+	"patterns": ["help", "i need help", "can i have help", "i need assistance", "can i have assistance", "could you lend a hand"],
+	"responses0": ["How may I help", "What do you need help with", "In what way may I be of assistance", "What do you need"],
+	"responses1": [" {}", ""], 
+	"responses2": ["?"],
+	"followups": ["I'm having issues navigating the chatbot.", "I need help with a question.", "I want to give feedback.", "I need help with something else."]
+	},
+
+	{"tag": "goodbye",
+	"patterns": ["goodbye", "bye", "bye bye", "see you later", "so long", "talk to you later", "see you soon", "I've got to get going", "I must be going", "take it easy", "I'm off", "have a nice day", "have a good evening", "have a good night", "have a good morning", "have a good one", "I look forward to our next meeting", "until next time", "take care", "it was nice to see you again", "it was nice seeing you", "goodnight", "later", "catch you later", "peace", "peace out", "I'm out", "I'm out of here", "I gotta hit the road", "I've got to head out", "I need to go", "I need to leave", "thanks, goodbye", "Excellent, goodbye", "thanks for your help, goodbye", "that helped a lot, goodbye", "thanks I've got to go."],
+	"responses0": ["Goodbye", "Have a good day", "Nice talking", "Later", "Talk to you later", "Have a great day", "Bye"],
+	"responses1": ["", " {}"], 
+	"responses2": ["! Message me if you need anything else!", "! If you need any help message me!", "! Hope we can chat again soon!"],
+	"followups": [""]
+	},
+
+	{"tag": "thanking",
+	"patterns": ["Thanks a bunch", "Thanks", "Thank you", "Thanks a bunch", "Thanks a ton", "I really appreciate it", "That's very kind", "I owe you one", "you rock", "I can't thank you enough", "I can't thank you enough", "I'm so grateful for", "I'm so thankful for", "Many thanks for", "I truly appreciate", "Thank you ever so much for", "It's so kind of you to", "I'm grateful for", "I cannot thank you enough for", "I want you to know how much I value", "cannot describe how grateful I am for", "Please accept my deepest thanks for", "Your support is greatly appreciated", "I'd like to express my appreciation for", "thanks rob", "thank you rob"],
+	"responses0": ["Glad it helped", "Happy it helped", "Great to hear that it helped", "Perfect", "Good to hear", "I'm glad that helped", "Nice to hear that helped"],
+	"responses1": ["! ", " {}! ", ". "],  
+	"responses2": [" Anything else?", " How else can I help?", " Do you need anything else?", " Is there something else I can do for you?", " Need anything else?"],
+	"followups": [""]
+	},
+
+
+
+	{"tag": "user uncertain",
+	"patterns": ["I'd like to make a complaint", "I'd like to add feedback", "can I give you some feedback", "is there a way for me to complain about something", "I don't understand", "that is the wrong response", "incorrect response", "I don't think that is the right way of saying that", "can you rephrase that", "can you say that in a different way", "please say that again", "can you word that differently", "that is not what I'm looking for", "that is not what I need", "wrong answer", "nope not what I was hoping for", "I don't think I needed to hear that", "that is not the help I needed", "that is not the help I was looking for", "I didn't want you to help me in that way", "nope, not what I wanted", "wrong, that isn't what I was hoping for"],
+	"responses0": ["Would you like to help train me to answer that? ", "Would you consider helping training me to recognize that? ", "Could you help train me to answer that? ", "Would you like to help train me? "], 
+	"responses1": ["If so type (Y) and if not (N)."],
+	"responses2": [""],
+	"followups": [""]
+	},
+
+	{"tag": "add to database later",
+	"patterns": ["N", "n", "(n)", "(N)", "No I don't want to train you", "no I do not want to help train the bot", "I have no interest in training you", "no interest, n", "n, not interested", "no", "not now"],
+	"responses0": ["Okay, ", "Alright, ", "Understood, ", "Got it, "],
+	"responses1": ["maybe later. ", "let me know if you want to at some other point. ", "just let me know if you are intrested later. "], 
+	"responses2": ["Anything else I can help you with?", "Do you need something else?", "What else can I do for you?"],
+	"followups": [""]
+	},
+
+	{"tag": "add to database now",
+	"patterns": ["Y", "y", "(y)", "(Y)"],
+	"responses0": ["First tell me the issue of where I could improve. ", "Start by writing out what area I could improve in. ", "Begin with telling me what you'd like to be improved. "],
+	"responses1": ["Then in the next line tell me what you'd have liked to see.", "In the next line tell me what you were hoping to see.", "After that in the next line type what you hoped to see."], 
+	"responses2": [""],
+	"followups": [""]
+	},
+
+	{"tag": "training done",
+	"patterns": ["Done training you"],
+	"responses0": ["Thanks for helping train me! ", "Thanks for training me! ", "Thanks for the help! ", "Thank you for helping! "],
+	"responses1": ["I'll be sending your feedback in soon. ", "Your feedback will soon be processed. ", "Your feedback will be looked over soon {}. "], 
+	"responses2": ["Is there another way I can help?", "Any other way I can help?", "How else can I help?", "Anything else you need?"],
+	"followups": [""]
+	},
+
+	{"tag": "something else",
+	"patterns": ["I need help something else", "none of these are what I'm looking for", "I wanted something else", "i wanted something different"],
+	"responses0": ["Okay here are some other options ", "Alright, here are some other questions ", "Here are some other questions "],
+	"responses1": ["that might help. ", "which may help. ", "which hopefully will give you what you need. "], 
+	"responses2": ["If you need something else feel free to type it bellow.", "If none of these help you can always type your question bellow.", "You can also type your question bellow and that might help."],
+	"followups": ["I need help with a question.", "I need help.", "I want to give feedback."]
+	},
+
+
+
+	{"tag": "Home start",
+	"patterns": ["Home", "home page"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Filler start",
+	"patterns": ["Filler", "fillers"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Alerts start",
+	"patterns": ["Alerts", "alert"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Goals start",
+	"patterns": ["Goals", "goal"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Health start",
+	"patterns": ["Health", "healthy", "my health"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Settings start",
+	"patterns": ["Settings", "setting"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Notifications start",
+	"patterns": ["Notifications", "notification", "notifying"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": ["I have a question related to general notification questions.", "Can you help me with understanding vital alerts?", "Can you help me with understanding device alerts?", "Can you help me with understanding goals?", "Can you help me with understanding geofence?", "Can you help me with understanding kiddo support?", "Can you help me with understanding promotional?", "Can you help me find something?", "I need something else."]
+	},
+
+	{"tag": "Guardians start",
+	"patterns": ["Guardians", "guardian"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Contact Us start",
+	"patterns": ["Contact Us", "contacting you", "contacts", "contact"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Rate the Kiddo start",
+	"patterns": ["Rate the Kiddo", "rating"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "About start",
+	"patterns": ["About"],
+	"responses0": ["Hi", "Hello", "Good day", "Hey", "Hey there", "How are you"],
+	"responses1": ["! ", " {}! ", ". "], 
+	"responses2": ["Now how may I help you?", "So what do you need?", "In what way may I help you?"],
+	"followups": [""]
+	},
+
+	{"tag": "Notifications General",
+	"patterns": ["I have a question related to general notifications."],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["general notification "], 
+	"responses2": ["question?"],
+	"followups": ["Do I need to keep all the notifications on?", "How ought I respond to a notification?", "What are the most important notifications to have on?"]
+	},
+
+	{"tag": "Notifications vital alerts",
+	"patterns": ["Can you help me with understanding vital alerts?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["vital alert "], 
+	"responses2": ["question?"],
+	"followups": ["What are vital alerts?", "What information about vital alerts do notifications give me?", "What does turning off vital alerts notifications do?"]
+	},
+
+	{"tag": "Notifications device alerts",
+	"patterns": ["Can you help me with understanding device alerts?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["device alert "], 
+	"responses2": ["question?"],
+	"followups": ["What are device alerts?", "What information about device alerts do notifications give me?", "What does turning off device alerts notifications do?"]
+	},
+
+	{"tag": "Notifications goals",
+	"patterns": ["Can you help me with understanding goals?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["goals "], 
+	"responses2": ["question?"],
+	"followups": ["What are goals?", "What information about goals do notifications give me?", "What does turning off goals notifications do?"]
+	},
+
+	{"tag": "Notifications geofence",
+	"patterns": ["Can you help me with understanding geofence?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["geofence "], 
+	"responses2": ["question?"],
+	"followups": ["What is geofence?", "What information about geofence do notifications give me?", "What does turning off geofence notifications do?"]
+	},
+
+	{"tag": "Notifications kiddo support",
+	"patterns": ["Can you help me with understanding kiddo support?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["kiddo support "], 
+	"responses2": ["question?"],
+	"followups": ["What is kiddo support?", "What information about kiddo support do notifications give me?", "What does turning off kiddo support notifications do?"]
+	},
+
+	{"tag": "Notifications promotional",
+	"patterns": ["Can you help me with understanding promotional?"],
+	"responses0": ["What is your", "How may I help with your"], 
+	"responses1": ["promotional "], 
+	"responses2": ["question?"],
+	"followups": ["What are promotional notifications?", "Are promotional notifications adverticements?", "What does turning off promotional notifications do?"]
+	},
+
+
+
+	{"tag": "user searching",
+	"patterns": ["Can you help me find something?"],
+	"responses0": ["What are ", "What is it that you are "], 
+	"responses1": ["looking", "searching", "trying to find"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["Where is the policy page?", "Where is the feedback page?", "Where is the contact page?", "How do I edit notifications?", "Where do I see the device policies?", "Where is the help page?"]
+	},
+
+	{"tag": "something else",
+	"patterns": ["I need something else"],
+	"responses0": ["In what other area ", "How else ", "In what other way "], 
+	"responses1": ["can I help you", "may I be of assistance", "may I help"], 
+	"responses2": ["?", " {}?", " today?"], 
+	"followups": ["I'd like to give bot feedback.", "I'm having a hardware problem.", "I'd like to have help with a problem I'm expirencing."]
 	}
+
 
 ]} 
