@@ -2,9 +2,6 @@ import random
 import json
 import pickle
 import numpy as np
-import sys, os
-
-import os
 
 from nltk.stem import WordNetLemmatizer
 
@@ -144,7 +141,6 @@ def chat(message):
 
 
 if __name__ == "__main__":
-	os.system('cls')
 	print('Bot is on, say hi!')
 	while True:
 		message = input("You: ")
