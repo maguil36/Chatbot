@@ -2,14 +2,20 @@ import random
 import json
 import pickle
 import numpy as np
+import sys, os
+
+import os
+
+from nltk.stem import WordNetLemmatizer
+
+from tensorflow.keras.models import load_model
 
 import nltk
 from nltk.stem import WordNetLemmatizer
 
-from tensorflow.keras.models import load_model
 from autocorrect import Speller
 
-## loading in data from model and intializing models and libs
+##loading in data from model
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
@@ -17,16 +23,17 @@ intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('chatbot_model.h5')
+
 spell = Speller(lang='en')
 
-## cleaning up sentences
+##cleaning up sentences
 
 def clean_up_sentence(sentence):
 	sentence_words = nltk.word_tokenize(sentence)
 	sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
 	return sentence_words
 
-## getting bag of words
+##getting bag of words
 
 def bag_of_words(sentence):
 	sentence_words = clean_up_sentence(sentence)
@@ -37,7 +44,7 @@ def bag_of_words(sentence):
 				bag[i] = 1
 	return np.array(bag)
 
-## predicting class
+##predicting class
 
 def predict_class(sentence):
 	bow = bag_of_words(sentence)
@@ -51,7 +58,7 @@ def predict_class(sentence):
 		return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
 	return return_list
 
-## getting responce
+##getting responce
 
 def get_response(intents_list, intents_json):
 	tag = intents_list[0]['intent']
@@ -63,8 +70,18 @@ def get_response(intents_list, intents_json):
 			break
 	return result
 
+def get_all_responses(var_name):
+	list0_, list1_ = [], intents['intents']
+	for i in list1_:
+		if i['tag'] == var_name:
+			for s0_ in i['responses0']:
+				for s1_ in i['responses1']:
+					for s2_ in i['responses2']:
+						list0_.append(s0_ + s1_ + s2_)
+	return(list0_)
+get_all_responses('training questions')
 
-##functions to sort through responses, and refrence if response is in list
+## variable finder
 
 def var_finder(lst, var_searching, return_var, fail_var):
     var_ = 0
@@ -77,6 +94,8 @@ def var_finder(lst, var_searching, return_var, fail_var):
     else:
         return (fail_var)
 
+## getting all responses
+    
 def get_all_responses(var_name):
 	list0_, list1_ = [], intents['intents']
 	for i in list1_:
@@ -86,48 +105,50 @@ def get_all_responses(var_name):
 					for s2_ in i['responses2']:
 						list0_.append(s0_ + s1_ + s2_)
 	return(list0_)
-print('Bot on.')
-## remove after the demo:
-print('Home, filler, alerts, goals, health, settings, notifications, guardians, contact us, rate the kiddo, about.')
-## remove this when you are done bridging gate between app and server, make name set based on api request from your kiddo
+        
+## remove this when you are done bridging gate between app and server
 name = "Marcos"
 
-res = 'temp'
-
-while True:
+def chat(message):
+	message = spell(message.lower())
 	add_to_database_ = get_all_responses('add to database now')
-	message = spell(input('').lower())
-
-	## test variable, remove before release
-	if message == 'break':
-		print('turning off')
-		break
-
+	name = "Marcos"
+	res = 'temp'
     ## bot training and storing after training
-	elif res == var_finder(add_to_database_, res, res, False):
+	if res == var_finder(add_to_database_, res, res, False):
 		message_0 = input('').lower()
 		list_temp = []
 		list_temp.append(message)
 		list_temp.append(message_0)
 		res = get_response([{'intent': 'training done', 'probability': '1'}], intents)[0]
 		followups = get_response([{'intent': 'training done', 'probability': '1'}], intents)[1]
-		print(res)
-		if followups != [""]:
-			print(followups)
+		if followups == [""]:
+			return (res, "")
+		else:
+			return (res, followups)
 
 	else:
 		ints = predict_class(message)
         ## bot is certain enough its the correct response 
-		if float(ints[0]['probability']) > .9:
+		if float(ints[0]['probability']) > .8:
 			res = get_response(ints, intents)[0]
 			followups = get_response(ints, intents)[1]
         ## bot is uncertain answer is correct result
 		else:
 			res = get_response([{'intent': 'bot uncertain', 'probability': '1'}], intents)[0]
 			followups = get_response([{'intent': 'bot uncertain', 'probability': '1'}], intents)[1]
-		print(res)
-		if followups != [""]:
-			print(followups)
+		if followups == [""]:
+			return (res, "")
+		else:
+			return (res, followups)
 
-		##add mechanism in app device version to save followups on user end rather then server for it to re-print after positive or negative feedback is given.
-		
+
+if __name__ == "__main__":
+	os.system('cls')
+	print('Bot is on, say hi!')
+	while True:
+		message = input("You: ")
+		if message == "break":
+			print('turning off')
+			break
+		print(chat(message))
