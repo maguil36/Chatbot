@@ -127,7 +127,7 @@ def chat(message):
 	else:
 		ints = predict_class(message)
         ## bot is certain enough its the correct response 
-		if float(ints[0]['probability']) > .8:
+		if float(ints[0]['probability']) > .65:
 			res = get_response(ints, intents)[0]
 			followups = get_response(ints, intents)[1]
         ## bot is uncertain answer is correct result
