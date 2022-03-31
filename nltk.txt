@@ -1,2 +1,3 @@
 wordnet
 punkt
+cmw-1.4
