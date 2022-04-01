@@ -4,7 +4,7 @@ import chatbot
 
 app = Flask(__name__)
 
-@app.get("/")
+@app.route("/")
 def index_get():
     return render_template("base.html")
 
@@ -16,4 +16,4 @@ def predict():
     return jsonify(message)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
