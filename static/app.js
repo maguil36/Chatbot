@@ -1,6 +1,7 @@
 class Chatbox {
     constructor() {
         this.args = {
+            chatTree: document.querySelector('.chatTree__buttons'),
             openButton: document.querySelector('.chatbox__button'),
             chatBox: document.querySelector('.chatbox__support'),
             sendButton: document.querySelector('.send__button')
@@ -11,11 +12,13 @@ class Chatbox {
     }
 
     display() {
-        const {openButton, chatBox, sendButton} = this.args;
+        const {openButton, chatBox, sendButton, chatTree} = this.args;
 
         openButton.addEventListener('click', () => this.toggleState(chatBox))
 
         sendButton.addEventListener('click', () => this.onSendButton(chatBox))
+
+        chatTree.addEventListener('click', () => this.chatTree(chatBox))
 
         const node = chatBox.querySelector('input');
         node.addEventListener("keyup", ({key}) => {
@@ -36,6 +39,46 @@ class Chatbox {
         }
     }
 
+// areas you need to add into the GUI:
+// First a group of buttons dependent upon the last responce, that will guide the user
+// This needs to construct a variable number of buttons
+// Needs to have the buttons all be clickable, with the click exicuting entering the text in the button into the chatbot
+// Lastly you need a method of adding user feedback into the bot and for the GUI to allow its imput, and then store it
+
+    chatTree(chatbox) {
+
+
+        var textField = chatbox.queryTree('input');
+        let text1 = textField.value
+        if (text1 === "") {
+            return;
+        }
+
+        let msg1 = { name: "User", message: text1 }
+        this.messages.push(msg1);
+
+        fetch('http://127.0.0.1:5000/predict', {
+            method: 'POST',
+            body: JSON.stringify({ message: text1 }),
+            mode: 'cors',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+        })
+        .then(r => r.json())
+        .then(r => {
+            let msg2 = { name: "Bot", message: r.answer };
+            this.messages.push(msg2);
+            this.updateChatText(chatbox)
+            textField.value = ''
+
+        }).catch((error) => {
+            console.error('Error:', error);
+            this.updateChatText(chatbox)
+            textField.value = ''
+        });
+    }
+
     onSendButton(chatbox) {
         var textField = chatbox.querySelector('input');
         let text1 = textField.value
@@ -46,7 +89,7 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch('https://testcha.herokuapp.com/predict', {
+        fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
